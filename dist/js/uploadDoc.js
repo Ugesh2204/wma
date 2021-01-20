@@ -1,186 +1,98 @@
-$.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
-  var fileIdCounter = 0;
+var dropZoneId = "drop-zone";
+  var buttonId = "clickHere";
+  var mouseOverClass = "mouse-over";
+var dropZone = $("#" + dropZoneId);
+ var inputFile = dropZone.find("input");
+ var finalFiles = {};
+$(function() {
+  
 
-  this.closest(".files").change(function (evt) {
-      var output = [];
+  
+  var ooleft = dropZone.offset().left;
+  var ooright = dropZone.outerWidth() + ooleft;
+  var ootop = dropZone.offset().top;
+  var oobottom = dropZone.outerHeight() + ootop;
+ 
+  document.getElementById(dropZoneId).addEventListener("dragover", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZone.addClass(mouseOverClass);
+    var x = e.pageX;
+    var y = e.pageY;
 
-      for (var i = 0; i < evt.target.files.length; i++) {
-          fileIdCounter++;
-          var file = evt.target.files[i];
-          var fileId = sectionIdentifier + fileIdCounter;
+    if (!(x < ooleft || x > ooright || y < ootop || y > oobottom)) {
+      inputFile.offset({
+        top: y - 15,
+        left: x - 100
+      });
+    } else {
+      inputFile.offset({
+        top: -400,
+        left: -400
+      });
+    }
 
-          filesToUpload.push({
-              id: fileId,
-              file: file
-          });
+  }, true);
 
-          var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + fileId + "\">Remove</a>";
+  if (buttonId != "") {
+    var clickZone = $("#" + buttonId);
 
-          output.push("<li><strong>", escape(file.name), "</strong> - ", file.size, " bytes. &nbsp; &nbsp; ", removeLink, "</li> ");
-      };
-    //  var test = document.querySelector(".fileList");
-    //      test.append(output.join(""));
-      $(this).children(".fileList")
-          .append(output.join(""));
+    var oleft = clickZone.offset().left;
+    var oright = clickZone.outerWidth() + oleft;
+    var otop = clickZone.offset().top;
+    var obottom = clickZone.outerHeight() + otop;
 
-      //reset the input to null - nice little chrome bug!
-      evt.target.value = null;
-  });
-
-  $(this).on("click", ".removeFile", function (e) {
-      e.preventDefault();
-
-      var fileId = $(this).parent().children("a").data("fileid");
-
-      // loop through the files array and check if the name of that file matches FileName
-      // and get the index of the match
-      for (var i = 0; i < filesToUpload.length; ++i) {
-          if (filesToUpload[i].id === fileId)
-              filesToUpload.splice(i, 1);
+    $("#" + buttonId).mousemove(function(e) {
+      var x = e.pageX;
+      var y = e.pageY;
+      if (!(x < oleft || x > oright || y < otop || y > obottom)) {
+        inputFile.offset({
+          top: y - 15,
+          left: x - 160
+        });
+      } else {
+        inputFile.offset({
+          top: -400,
+          left: -400
+        });
       }
-
-      $(this).parent().remove();
-  });
-
-  this.clear = function () {
-      for (var i = 0; i < filesToUpload.length; ++i) {
-          if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
-              filesToUpload.splice(i, 1);
-      }
-
-      $(this).children(".fileList").empty();
+    });
   }
 
-  return this;
-};
+  document.getElementById(dropZoneId).addEventListener("drop", function(e) {
+    $("#" + dropZoneId).removeClass(mouseOverClass);
+  }, true);
 
-(function () {
-  var filesToUpload = [];
 
-  var files1Uploader = $("#files1").fileUploader(filesToUpload, "files1");
+  inputFile.on('change', function(e) {
+    finalFiles = {};
+    $('#filename').html("");
+    var fileNum = this.files.length,
+      initial = 0,
+      counter = 0;
+
+    $.each(this.files,function(idx,elm){
+       finalFiles[idx]=elm;
+    });
+
+    for (initial; initial < fileNum; initial++) {
+      counter = counter + 1;
+      $('#filename').append('<div id="file_'+ initial +'"><span class="fa-stack fa-lg"><i class="fa fa-file fa-stack-1x "></i><strong class="fa-stack-1x" style="color:#FFF; font-size:12px; margin-top:2px;">' + counter + '</strong></span> ' + this.files[initial].name + '&nbsp;&nbsp;<span class="fa fa-times-circle fa-lg closeBtn" onclick="removeLine(this)" title="remove"></span></div>');
+    }
+  });
+
+
 
 })
 
+function removeLine(obj)
+{
+  inputFile.val('');
+  var jqObj = $(obj);
+  var container = jqObj.closest('div');
+  var index = container.attr("id").split('_')[1];
+  container.remove(); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//jQuery plugin
-(function( $ ) {
-   
-  $.fn.uploader = function( options ) {
-    var settings = $.extend({
-      MessageAreaText: "No files selected.",
-      MessageAreaTextWithFiles: "File List:",
-      DefaultErrorMessage: "Unable to open this file.",
-      BadTypeErrorMessage: "We cannot accept this file type at this time.",
-      acceptedFileTypes: ['pdf', 'jpg', 'gif', 'jpeg', 'bmp', 'tif', 'tiff', 'png', 'xps', 'doc', 'docx',
-       'fax', 'wmp', 'ico', 'txt', 'cs', 'rtf', 'xls', 'xlsx']
-    }, options );
- 
-    var uploadId = 1;
-    //update the messaging 
-     $('.file-uploader__message-area p').text(options.MessageAreaText || settings.MessageAreaText);
-    
-    //create and add the file list and the hidden input list
-    var fileList = $('<ul class="file-list"></ul>');
-    var hiddenInputs = $('<div class="hidden-inputs hidden"></div>');
-    $('.file-uploader__message-area').after(fileList);
-    $('.file-list').after(hiddenInputs);
-    
-   //when choosing a file, add the name to the list and copy the file input into the hidden inputs
-    $('.file-chooser__input').on('change', function(){
-       var file = $('.file-chooser__input').val();
-       var fileName = (file.match(/([^\\\/]+)$/)[0]);
-
-      //clear any error condition
-      $('.file-chooser').removeClass('error');
-      $('.error-message').remove();
-      
-      //validate the file
-      var check = checkFile(fileName);
-      if(check === "valid") {
-        
-        // move the 'real' one to hidden list 
-        $('.hidden-inputs').append($('.file-chooser__input')); 
-      
-        //insert a clone after the hiddens (copy the event handlers too)
-        $('.file-chooser').append($('.file-chooser__input').clone({ withDataAndEvents: true})); 
-      
-        //add the name and a remove button to the file-list
-        $('.file-list').append('<li style="display: none;"><span class="file-list__name">' + fileName + '</span><button class="removal-button" data-uploadid="'+ uploadId +'"></button></li>');
-        $('.file-list').find("li:last").show(800);
-       
-        //removal button handler
-        $('.removal-button').on('click', function(e){
-          e.preventDefault();
-        
-          //remove the corresponding hidden input
-          $('.hidden-inputs input[data-uploadid="'+ $(this).data('uploadid') +'"]').remove(); 
-        
-          //remove the name from file-list that corresponds to the button clicked
-          $(this).parent().hide("puff").delay(10).queue(function(){$(this).remove();});
-          
-          //if the list is now empty, change the text back 
-          if($('.file-list li').length === 0) {
-            $('.file-uploader__message-area').text(options.MessageAreaText || settings.MessageAreaText);
-          }
-        });
-      
-        //so the event handler works on the new "real" one
-        $('.hidden-inputs .file-chooser__input').removeClass('file-chooser__input').attr('data-uploadId', uploadId); 
-      
-        //update the message area
-        $('.file-uploader__message-area').text(options.MessageAreaTextWithFiles || settings.MessageAreaTextWithFiles);
-        
-        uploadId++;
-        
-      } else {
-        //indicate that the file is not ok
-        $('.file-chooser').addClass("error");
-        var errorText = options.DefaultErrorMessage || settings.DefaultErrorMessage;
-        
-        if(check === "badFileName") {
-          errorText = options.BadTypeErrorMessage || settings.BadTypeErrorMessage;
-        }
-        
-        $('.file-chooser__input').after('<p class="error-message">'+ errorText +'</p>');
-      }
-    });
-    
-    var checkFile = function(fileName) {
-      var accepted          = "invalid",
-          acceptedFileTypes = this.acceptedFileTypes || settings.acceptedFileTypes,
-          regex;
-
-      for ( var i = 0; i < acceptedFileTypes.length; i++ ) {
-        regex = new RegExp("\\." + acceptedFileTypes[i] + "$", "i");
-
-        if ( regex.test(fileName) ) {
-          accepted = "valid";
-          break;
-        } else {
-          accepted = "badFileName";
-        }
-      }
-
-      return accepted;
-   };
- }; 
-}( jQuery ));
-
-//init 
-$(document).ready(function(){
- $('.fileUploader').uploader({
-   MessageAreaText: "No files selected. Please select a file."
- });
-});
+  delete finalFiles[index];
+  //console.log(finalFiles);
+}

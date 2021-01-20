@@ -15,6 +15,8 @@ $(function(){
             } else {
                 $('.wizard > .steps ul').removeClass('step-3');
             }
+
+            
             return true; 
         },
         labels: {
