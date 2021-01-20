@@ -377,36 +377,11 @@
                         <div class="card-body">
                           <div class="row">
                             <div class="col-md-12">
-                              <!-- <div class="file-uploaders">
-                                  <div class="file-chooser">
-                                    <input class=" btn btn-primary file-chooser__input" type="file">
-                                  </div>
 
-                                  <div class="file-uploader__message-area">
-                                    <p></p>
-                                  </div>
-                                  
-                                  
-                                </div> -->
-
-                              <div class="container">
-                                <label for="files">Select files:</label>
-                                <input type="file" id="files" name="files" multiple><br><br>
-
-
-                                <!-- The file upload form used as target for the file upload widget -->
-                                <!-- <div id="fileupload">
-                                      <div class="row files" id="files1">
-                                          <h2>Select files</h2>
-                                          <span class="btn btn-primary btn-file">
-                                              Upload  <input type="file" name="files1" multiple />
-                                          </span>
-                                          
-                                          <ul class="fileList"></ul>
-                                      </div>
-                                    </div> -->
-
-                              </div>
+                              <input type="file" id="uploadFile" name="FileUpload" multiple="multiple" />
+                              <div id="upload_prev"></div>
+                              <input type="checkbox" id="clearOnDelete" class="hide" value=1 checked/>
+                        
                             </div>
                           </div>
                         </div>
@@ -727,9 +702,10 @@
   <script src="dist/js/jquery.steps.js"></script>
 
   <script src="dist/js/custom.js"></script>
-  <script src="dist/js/uploadDoc.js"></script>
+  
   <script src="dist/js/dragandDrop.js"></script>
   <script src="dist/js/meetingwizard.js"></script>
+  <script src="dist/js/uploadfile.js"></script>
 
 
 
