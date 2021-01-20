@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    
+    <link rel="stylesheet" href="dist/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/main.css">
+  
+
+
+  
+  
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    /* #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; background-color: aqua; }
+  #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; background-color: beige; } */
+  </style>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+
+
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right p-0 notif-position">
+            <div class="notifwrapper">
+              <div class="notif-heading">
+                <span class=" dropdown-header notif-nbr">15 Notifications</span>
+              </div>
+
+              <div class="notif-list">
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <i class="fas fa-envelope mr-2"></i> Hello a meeting was published
+                      <span class="float-right text-muted text-sm">3 mins</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="text-muted text-sm ml-4">Test Meeting</span>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <i class="fas fa-copy mr-2"></i> Manu@gmail.com uploaded a document
+                      <span class="float-right text-muted text-sm">3 mins</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="text-muted text-sm ml-4">Text File</span>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <i class="far fa-calendar mr-2"></i> Meeting was published
+                      <span class="float-right text-muted text-sm">3 mins</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <span class="text-muted text-sm ml-4">Board meeting</span>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <i class="fas fa-users mr-2"></i> 8 friend requests
+                      <span class="float-right text-muted text-sm">3 mins</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-file mr-2"></i> 3 new reports
+                  <span class="float-right text-muted text-sm">2 days</span>
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+
+              </div>
+            </div>
+
+          </div>
+        </li>
+
+
+
+        <!-- Logedin user -->
+        <li class="nav-item dropdown">
+          <a class="nav-link">
+            <i class="fas fa-user"></i>
+            <span>Jean Pascale </span>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link text-center">
+        <img src="dist/img/wma.jpg" alt="AdminLTE Logo" class="brand-rederlogo">
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="Users.html" class="nav-link">
+                <i class="fas fa-user-plus"></i>
+                Add a User
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Subcommitee.html" class="nav-link">
+                <i class="fas fa-user-plus"></i>
+                Sub Committees Group
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Meeting.html" class="nav-link">
+                <i class="far fa-calendar-alt"></i>
+                Create Meetings
+              </a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a href="ListOfUsers.html" class="nav-link">
+                <i class="fas fa-list"></i>
+                List of Members
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="fas fa-shopping-cart"></i>
+                List des commandes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Saisir-commande.html" class="nav-link">
+                <i class="fas fa-cart-plus"></i>
+                Saisir une commande
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="UserActivitylog.html" class="nav-link">
+                <i class="fas fa-user"></i>
+                User activity Log
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-11 col-sm-12 mx-auto whitebgbox">
+
+             
+           
+
+
+
+
+      <div class="wrapper">
+            <div class="image-holder">
+              <img src="images/form-wizard.png" alt="">
+            </div>
+                  <form action="">
+                    <div class="form-header">
+                      <h3>Create A Meeting</h3>
+                    </div>
+                    <div id="wizard">
+                      <!-- SECTION 1 -->
+                        <h4></h4>
+                        <section>
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="form-group">
+                                <label class="mb-1">Meeting Number</label>
+                                <input type="text" class="form-control col-md-2" value="248">
+                              </div>
+                              <div class="form-group">
+                                <label class="mb-1">Our Reference</label>
+                                <select class="typefocommittees form-control">
+                                  <option>Select Reference</option>
+                                  <option>WMA/FPMC</option>
+                                  <option>WMA-SC</option>
+                                  <option>WMA/CGC</option>
+                                  <option>WMA/ARC</option>
+                                  <option>WMA/BD</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label class="mb-1">Sub-committees & Board Meeting</label>
+                                <select class="typefocommittees form-control">
+                                  <option>Select a meeting</option>
+                                  <option>Finance and Project Monitoring Committee</option>
+                                  <option>Staff Committees</option>
+                                  <option>Corporate Governance Committee</option>
+                                  <option>Audit and Risk Committee</option>
+                                  <option>Board Meeting</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label class="mb-1">Meeting Title</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label class="mb-1">Location</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group ">
+                                <label class="m-0">Date:</label>
+                                <input type="date" class="form-control datetimepicker-input">
+      
+                                <label class="m-0">From:</label>
+                                <input class=" form-control" type="time" name="from">
+      
+                                <label class="m-0">To:</label>
+                                <input class=" form-control" type="time" name="to">
+                              </div>
+                            </div>
+                          </div>
+
+                            
+                        </section>
+                        
+                      <!-- SECTION 2 -->
+                        <h4></h4>
+                        <section>
+                          <!-- Add People to meeting and load existing People according to committees-->
+                          <h4>Members</h4>
+                          <div class="card">
+                            <div class="card-body">
+                              <!-- <div class="d-flex justify-content-end mb-2">
+                                <a href="NewMeeting.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Add
+                                  Member</a>
+                              </div> -->
+
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="people-list">
+                                    <div class="person-card">
+                                      <div class="profile-image-inner">
+                                        <img class="profile-imgsmall" src="/dist/img/default_user.png">
+                                      </div>
+                                      <div class="name p-1">Mrs B. Kissoon-Luckpuuttya <span class="mstatus"> -
+                                          Chairman</span></div>
+                                      <!-- <a href="#" class="p-1">
+                                        <i class="fa fa-times delicon" style="font-size: 1.18em" aria-hidden="true"></i>
+                                      </a> -->
+                                    </div>
+                                    <div class="person-card">
+                                      <div class="profile-image-inner">
+                                        <img class="profile-imgsmall" src="/dist/img/default_user.png">
+                                      </div>
+                                      <div class="name p-1">Dr C.Bokhoree <span class="mstatus"> - Member</span></div>
+                                      <!-- <a href="#" class="p-1">
+                                        <i class="fa fa-times delicon" style="font-size: 1.18em" aria-hidden="true"></i>
+                                      </a> -->
+                                    </div>
+                                    <div class="person-card">
+                                      <div class="profile-image-inner">
+                                        <img class="profile-imgsmall" src="/dist/img/default_user.png">
+                                      </div>
+                                      <div class="name p-1">Mr L.J.C Ramasawmy <span class="mstatus"> - Member</span></div>
+                                      <!-- <a href="#" class="p-1">
+                                        <i class="fa fa-times delicon" style="font-size: 1.18em" aria-hidden="true"></i>
+                                      </a> -->
+                                    </div>
+                                    <div class="person-card">
+                                      <div class="profile-image-inner">
+                                        <img class="profile-imgsmall" src="/dist/img/default_user.png">
+                                      </div>
+                                      <div class="name p-1">Mr S. Khuntoo <span class="mstatus"> - Member</span></div>
+                                      <!-- <a href="#" class="p-1">
+                                        <i class="fa fa-times delicon" style="font-size: 1.18em" aria-hidden="true"></i>
+                                      </a> -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="person-card">
+                                    <div class="profile-image-inner">
+                                      <img class="profile-imgsmall" src="/dist/img/default_user.png">
+                                    </div>
+                                    <div class="name p-1">Mr N. Jowaheer <span class="mstatus"> - officer in charge</span>
+                                    </div>
+                                    <!-- <a href="#" class="p-1">
+                                      <i class="fa fa-times delicon" style="font-size: 1.18em" aria-hidden="true"></i>
+                                    </a> -->
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- Upload documenet-->
+                          <h4>Upload Documents</h4>
+                          <div class="card">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <!-- <div class="file-uploaders">
+                                  <div class="file-chooser">
+                                    <input class=" btn btn-primary file-chooser__input" type="file">
+                                  </div>
+
+                                  <div class="file-uploader__message-area">
+                                    <p></p>
+                                  </div>
+                                  
+                                  
+                                </div> -->
+
+                                  <div class="container">
+                                    <label for="files">Select files:</label>
+                                    <input type="file" id="files" name="files" multiple><br><br>
+
+
+                                    <!-- The file upload form used as target for the file upload widget -->
+                                    <!-- <div id="fileupload">
+                                      <div class="row files" id="files1">
+                                          <h2>Select files</h2>
+                                          <span class="btn btn-primary btn-file">
+                                              Upload  <input type="file" name="files1" multiple />
+                                          </span>
+                                          
+                                          <ul class="fileList"></ul>
+                                      </div>
+                                    </div> -->
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          
+                        </section>
+
+                        <!-- SECTION 3 -->
+                        <h4></h4>
+                        <section>
+                            <div class="form-row">
+                              <label for="">
+                                Course ID:
+                              </label>
+                              <div class="form-holder">
+                                <input type="text" class="form-control" placeholder="Ex. abc 12345 or abc 1234L">
+                              </div>
+                            </div>	
+                            <div class="form-row">
+                              <label for="">
+                                Course Title:
+                              </label>
+                              <div class="form-holder">
+                                <input type="text" class="form-control" placeholder="Ex. Intro to physic">
+                              </div>
+                            </div>	
+                            <div class="form-row">
+                              <label for="">
+                                Section(s):
+                              </label>
+                              <div class="form-holder">
+                                <input type="text" class="form-control" placeholder="Ex. 3679 or 33fa, 4295">
+                              </div>
+                            </div>	
+                            <div class="form-row" style="margin-bottom: 38px">
+                              <label for="">
+                                Select Teacher:
+                              </label>
+                              <div class="form-holder">
+                                <select name="" id="" class="form-control">
+                                  <option value="frances meyer" class="option">Frances Meyer</option>
+                        <option value="johan lucas" class="option">Johan Lucas</option>
+                        <option value="merry linn" class="option">Merry Linn</option>
+                      </select>
+                      <i class="zmdi zmdi-caret-down"></i>
+                              </div>
+                            </div>	
+                            <div class="checkbox-circle" style="margin-bottom: 48px;">
+                    <label>
+                      <input type="checkbox" checked>I agree all statement in Terms & Conditions
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                        </section>
+                    </div>
+                  </form>
+          </div>
+
+
+
+
+
+
+
+
+              
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>REDER - Command par Téléphone</strong>
+      <div class="float-right d-none d-sm-inline-block">
+        <b>2020</b> 1.0.0
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- DataTables -->
+  <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- page script -->
+  <!-- JQUERY STEP -->
+  <script src="dist/js/jquery.steps.js"></script>
+
+  <script src="dist/js/custom.js"></script>
+  <script src="dist/js/uploadDoc.js"></script>
+  <script src="dist/js/dragandDrop.js"></script>
+  <script src="dist/js/meetingwizard.js"></script>
+
+
+
+
+
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+</body>
+
+</html>

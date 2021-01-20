@@ -1,0 +1,67 @@
+:root {
+    --blue: #1F8597;
+    --silverGray: #EFF0F2;
+    --white: #ffffff;
+    --darkGray: #333333;
+    --darkGreen: #317773;
+    --lightGreen: #C6E0BB;
+    --lightPink: #FEFEFE;
+    --darkerBlack: #525A65;
+    --lightOrange: #EF8336;
+    --lightRed: #F4516C;
+  }
+  
+
+.login-body {
+    background-color: var(--blue);
+}
+
+.user_card {
+    width: 420px;
+    height: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color:var(--silverGray);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+
+.form-heading-text {
+    font-size: 1.8rem;
+    color:#333;
+}
+
+.login_btn {
+    width: 100%;
+    background:var(--blue);
+    color: white;
+}
+.login_btn:focus {
+    box-shadow: none;
+    outline: 0px;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background:var(--blue);
+    color: white;
+    border: 0;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none;
+    outline: 0px;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--blue);
+}
