@@ -177,6 +177,12 @@
               </a>
             </li>
             <li class="nav-item">
+              <a href="Minutes.html" class="nav-link">
+                <i class="fas fa-sticky-note"></i>
+                 Minutes
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="Users.html" class="nav-link">
                   <i class="fas fa-user-plus"></i>
                   Add Member
@@ -322,7 +328,7 @@
                                   <hr>
                                   <li class="mt-2">
                                     <div class="d-flex">
-                                      <h5 class="item-title ">Item Topic Example</h5>
+                                      <h5 class="item-title">Item Topic Example</h5>
 
                                       <div class="form-group clearfix text-center ml-auto ">
                                         <div class="icheck-primary d-inline">
@@ -553,7 +559,7 @@
                 <div class=" col col-sm-12 col-md-12 col-lg-4">
                  
                    <!--Actions-->
-                   <div class="row mt-3">
+                   <div class="row">
                     <div class="col-md-12">
                       <div class="card side-card-primary">
                         <div class="card-header side-card-header">
@@ -570,10 +576,15 @@
                         <div class="card-body">
                           <ul class="content-sidebar-meeting">
                             <li>
-                       
                               <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal">
                                 <i class="far fa-clipboard"></i>
                                 Take minutes
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal">
+                                <i class="far fa-edit"></i>
+                                Edit minutes
                               </a>
                             </li>
                             <li>
@@ -685,6 +696,13 @@
                                       </div>
                                     </div>
                                   </div>
+                                  <div class="row">
+                                    <div class="form-group">
+                                      <label for="caption">Description</label>
+                                      <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                  </div>
+                                 
                                 </div> <!-- End Modal body -->
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-primary">Save</button>
@@ -703,7 +721,7 @@
                   </div><!--End Actions-->
 
                   <!--Members-->
-                  <div class="row mt-3">
+                  <div class="row">
                     <div class="col-md-12">
                       <div class="card side-card-primary">
                         <div class="card-header side-card-header">
@@ -719,7 +737,7 @@
                         <!-- /.card-header -->
                         <div class="card-body">
                           <!--memberlist-->
-                          <div class="memberlist">
+                          <div class="memberlists">
                             <table class="table table-striped table-responsive-sm">
                     
                               <!-- <thead class="thead-blue">
@@ -797,10 +815,10 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Upload Documents</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#doc">Upload Documents</button>
 
                           <!-- The Modal -->
-                         <div class="modal" id="myModal">
+                         <div class="modal" id="doc">
                            <div class="modal-dialog">
                              <div class="modal-content">
    
@@ -908,6 +926,7 @@
    
                                <!-- Modal footer -->
                                <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save</button>
                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                </div>
    
