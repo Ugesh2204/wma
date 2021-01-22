@@ -26,3 +26,16 @@ $(document).ready(function(readyEvent) {
     }
   });
 });
+
+
+
+
+
+
+function documentVal()
+    {
+        if($('#doc2').is(":checked"))   
+            $(".memberlist").show();
+        else
+            $(".memberlist").hide();
+    }

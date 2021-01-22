@@ -169,52 +169,44 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-
+            
             <li class="nav-item">
-              <a href="Subcommitee.html" class="nav-link">
-                <i class="fas fa-clipboard-list"></i>
-                Sub Committees & Board
+              <a href="Upcomingmeetings" class="nav-link">
+                <i class="far fa-calendar-alt"></i>
+                 Upcoming Meetings
               </a>
             </li>
-
-            <li class="nav-item">
-              <a href="Meeting.html" class="nav-link">
-                <i class="fas fa-user-plus"></i>
-                Meetings
-              </a>
-            </li>
-
             <li class="nav-item">
               <a href="Users.html" class="nav-link">
-                <i class="fas fa-user-plus"></i>
-                Add a User
+                  <i class="fas fa-user-plus"></i>
+                  Add Member
               </a>
             </li>
-
             <li class="nav-item">
               <a href="ListOfUsers.html" class="nav-link">
                 <i class="fas fa-list"></i>
-                List of Users
+                 List of Members
               </a>
             </li>
-
+  
             <li class="nav-item">
-              <a href="index.html" class="nav-link">
-                <i class="fas fa-shopping-cart"></i>
-                List des commandes
+              <a href="Subcommitee.html" class="nav-link">
+                <i class="far fa-clipboard"></i>
+                  Sub Committees
               </a>
             </li>
+  
             <li class="nav-item">
-              <a href="Saisir-commande.html" class="nav-link">
-                <i class="fas fa-cart-plus"></i>
-                Saisir une commande
+              <a href="Meeting.html" class="nav-link">
+                <i class="far fa-calendar"></i>
+                  Create Meetings
               </a>
             </li>
+  
             <li class="nav-item">
               <a href="UserActivitylog.html" class="nav-link">
                 <i class="fas fa-user"></i>
-                User activity Log
+                  User activity Log
               </a>
             </li>
           </ul>
@@ -276,8 +268,14 @@
                     <div class="card-body">
                       <!-- <div class="view-wrapper p-5"> -->
                         <div class="row">
-                          <div class="col-md-6"><b>Our Reference:</b> WMA/243 BD/1</div>
-                          <div class="col-md-2 ml-auto p-2"><b>Date: 20/01/2021</b></div>
+                          <div class="col-md-6 info-meeeting"><b>Our Reference:</b> WMA/243 BD/1</div>
+                        </div>
+                        <div class="row mt-4">
+                          <ul>
+                            <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span class="info-meeeting ml-2">Friday, January 22 2021</span></li>
+                            <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span class="info-meeeting ml-2">10:00am - 11:00 am</span> </li>
+                            <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span class="info-meeeting ml-2">Port Louis</span></li>
+                          </ul>
                         </div>
                         <section>
                           <div class="row mb-3 mt-3">
@@ -292,51 +290,25 @@
                                 <th>Members</th>
                                 <th></th>
                                 <th></th>
-                                <th class="text-center">Attendance</th>
+                               
                               </thead>
                               <tbody>
                               <tr>
                                 <td><b>Mr Veerapa</b></td>
                                 <td></td>
                                 <td><b>- Chairman</b></td>
-                                <td>
-                                  <div class="form-group clearfix text-center">
-                                  <div class="icheck-primary d-inline">
-                                    <input type="checkbox" id="checkboxPrimary1" checked>
-                                    <label for="checkboxPrimary1">
-                                    </label>
-                                  </div>
-                                  </div>
-                                </td>
+                               
                               </tr>
                               <tr>
                                 <td><b>Mrs  B Kissoon-Luckpuuttya</b></td>
                                 <td></td>
                                 <td><b>- Member</b></td>
-                                <td>
-                                  <div class="form-group clearfix text-center">
-                                  <div class="icheck-primary d-inline">
-                                    <input type="checkbox" id="checkboxPrimary2">
-                                    <label for="checkboxPrimary2">
-                                    </label>
-                                  </div>
-                                  </div>
-                                </td>
                               </tr>
                               <tr>
                                 <td><span><b>Mr N.Jowaheer</b> <b>Officer in charge</b></span></td>
                                 <td></td>
                                 <td><b>- In Attendance</b></td>
-                                <td>
-                                  <div class="form-group clearfix text-center">
-                                  <div class="icheck-primary d-inline">
-                                    <!-- <div class="round"> -->
-                                      <input type="checkbox" id="checkbox" />
-                                      <label for="checkbox"></label>
-                                    <!-- </div> -->
-                                  </div>
-                                  </div>
-                                </td>
+                               
                               </tr>
                             </tbody>
                           </table>
@@ -528,103 +500,7 @@
                     </div>
                   </div>
                   
-                    <!-- Voting Poll-->
-                    <h4>Voting Poll</h4>
-                    <div class="card">
-                      <div class="d-flex justify-content-end mb-2 mt-2 mr-2">
-                       
-                        <div class="btn-group btn-group-toggle mr-2" data-toggle="buttons">
-                          <label class="btn btn-primary active">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Show
-                          </label>
-                          <label class="btn btn-primary">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> Hide
-                          </label>
-                        </div>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#votePoll"><i
-                          class="fas fa-poll"></i> Add
-                         Poll
-                         </a>
-                      </div>
-
-                      
-                     
-                      <!-- Voting Modal -->
-                      <div class="modal" id="votePoll">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                              <h4 class="modal-title">Modal Heading</h4>
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                              <form>
-                                <div class="form-group">
-                                  <label class="mb-1">Question</label>
-                                  <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                  <label>Description</label>
-                                  <textarea class="form-control" rows="4" placeholder="Enter ..."></textarea>
-                                </div>
-
-                              </form>
-                            </div>
-
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <table class="table text-center table-striped table-responsive-sm">
-                          <thead class="thead-blue">
-                            <th>No.</th>
-                            <th>Question Item</th>
-                            <th class="text-center">Vote</th>
-                            <th class="text-center">Number of Vote</th>
-                            <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>Item to be voted for.</td>
-                                <td>
-                                  <div class="form-group clearfix text-center">
-                                    <div class="icheck-primary d-inline">
-                                      <input type="checkbox" id="vote1">
-                                      <label for="vote1">
-                                      </label>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="vote-text ">1 out 4 Members have voted</td>
-                              </tr>
-                              <tr>
-                                <td>1</td>
-                                <td>Item to be voted for.</td>
-                                <td>
-                                  <div class="form-group clearfix text-center">
-                                    <div class="icheck-primary d-inline">
-                                      <input type="checkbox" id="vote2">
-                                      <label for="vote2">
-                                      </label>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="vote-text ">3 out 4 Members have voted</td>
-                              </tr>
-                            </tbody>
-                          </thead>
-                        </table>
-                      </div>
-                    </div> <!-- Voting Poll-->
-
+                 
                 </div><!-- End col-lg-8 inner-content-->
 
                 <div class=" col col-sm-12 col-md-12 col-lg-4">
@@ -635,24 +511,24 @@
                         Edit Meeting
                       </a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a href="Users.html" data-toggle="modal" data-target="#myModal">
                         <i class="far fa-clipboard"></i>
                         Take minutes
                       </a>
-                    </li>
+                    </li> -->
                     <li>
                       <a href="Users.html" data-toggle="modal" data-target="#myModal">
                         <i class="fas fa-paper-plane"></i>
                         Send Invitation
                       </a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a href="Users.html" data-toggle="modal" data-target="#myModal">
                         <i class="fas fa-users"></i>
                         Join Meeting
                       </a>
-                    </li>
+                    </li> -->
 
 
                   </ul>

@@ -24,6 +24,25 @@
   color: #fff;
 }
 
+.meeting-heading {
+  background-color: var(--window);
+  color: #fff;
+  font-size: 1.3rem;
+  padding:0.5rem;
+}
+
+.item-title {
+  color:var(--window);
+  font-size: 1.1rem;
+ font-weight: 600;
+}
+
+.voting {
+  color:var(--window);
+  font-size: 1.1rem;
+ font-weight: 600;
+}
+
 a {
   color:var(--wmacolor);
   text-decoration: none;
@@ -832,6 +851,13 @@ display: block;
   color:var(--window);
 }
 
+.icon-general {
+  font-size: 1.5rem;
+}
+.info-meeeting {
+  font-size: 1.2rem;
+}
+
 
 
 /***/
@@ -920,6 +946,8 @@ display: block;
     margin-bottom: 1rem;
   }
 
+
+ 
 
 
 }
