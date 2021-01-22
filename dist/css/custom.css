@@ -24,11 +24,25 @@
   color: #fff;
 }
 
+.side-card-header {
+  background-color: var(--window) !important;
+  color: #fff !important;
+}
+
 .meeting-heading {
   background-color: var(--window);
   color: #fff;
   font-size: 1.3rem;
   padding:0.5rem;
+}
+
+/*status icon*/
+
+.login-status {
+  color:#70C908;
+}
+.notlogin-status {
+  color:#ccc;
 }
 
 .item-title {
@@ -611,6 +625,29 @@ display: block;
   padding: 1rem;
 }
 
+.content-sidebar-meeting {
+  list-style-type: none;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.content-sidebar-meeting li a{
+  padding: 0.8rem;
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.content-sidebar-meeting li a:hover {
+  background-color: #D9EDF7;
+  padding: 1rem;
+  color:var(--window);
+  padding: 0.8rem;
+}
+
+
+
 .hide-small {
   display: block;
 }
@@ -857,6 +894,11 @@ display: block;
 .info-meeeting {
   font-size: 1.2rem;
 }
+.info-minutes {
+  font-size: 1rem;
+}
+
+
 
 
 
