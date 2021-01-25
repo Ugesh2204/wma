@@ -33,9 +33,11 @@ $(document).ready(function(readyEvent) {
 
 
 function documentVal()
-    {
-        if($('#doc2').is(":checked"))   
-            $(".memberlist").show();
-        else
+    { 
+     
+     
+        if($('#doc1').is(":checked"))   
             $(".memberlist").hide();
+        else
+            $(".memberlist").show();
     }

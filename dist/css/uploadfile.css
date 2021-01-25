@@ -40,7 +40,7 @@ input[type=file]::-webkit-file-upload-button {
 
 #upload_prev {
     border:thin solid #ccc;
-    width: 65%;
+    width: 100%;
     padding:0.5em 1em 1.5em 1em;
 }
 
