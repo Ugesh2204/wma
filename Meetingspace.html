@@ -171,9 +171,15 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             
             <li class="nav-item">
-              <a href="Upcomingmeetings" class="nav-link">
+              <a href="Upcomingmeetings.html" class="nav-link">
                 <i class="far fa-calendar-alt"></i>
                  Upcoming Meetings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Document.html" class="nav-link">
+                <i class="far fa-calendar-alt"></i>
+                Document
               </a>
             </li>
             <li class="nav-item">
@@ -298,14 +304,22 @@
                                     <div class="d-flex">
                                       <h5 class="item-title ">Item Topic Example</h5>
 
-                                      <div class="form-group clearfix text-center ml-auto ">
-                                        <div class="icheck-primary d-inline">
-                                          <input type="checkbox" id="vote1">
-                                          <label for="vote1">
-                                          </label>
+                                      <div class="vote-wrapper ml-auto">
+                                        <div class="form-group clearfix text-center vote-inline ">
+                                          <div class="icheck-primary mr-2">
+                                            <input type="radio" name="yes_no" id="vote1"></input>
+                                            <label for="vote1">
+                                              Yes
+                                            </label>
+                                          </div>
+                                          <div class="icheck-primary vote-inline">
+                                            <input type="radio" name="yes_no" id="vote"></input>
+                                            <label for="vote">
+                                              No
+                                            </label>
+                                          </div>
                                         </div>
                                       </div>
-
                                     </div>
                                     
                                     <span>Any motions or topic description, and approve or reject</span>
@@ -315,29 +329,24 @@
                                     <div class="d-flex">
                                       <h5 class="item-title ">Item Topic Example</h5>
 
-                                      <div class="form-group clearfix text-center ml-auto ">
-                                        <div class="icheck-primary d-inline">
-                                          <input type="checkbox" id="vote2">
-                                          <label for="vote2">
-                                          </label>
+                                      <div class="vote-wrapper ml-auto">
+                                        <div class="form-group clearfix text-center vote-inline ">
+                                          <div class="icheck-primary mr-2">
+                                            <input type="radio" name="yes_no" id="vote2"></input>
+                                            <label for="vote2">
+                                              Yes
+                                            </label>
+                                          </div>
+                                          <div class="icheck-primary vote-inline">
+                                            <input type="radio" name="yes_no" id="vote21"></input>
+                                            <label for="vote21">
+                                              No
+                                            </label>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
-                                    <span>Any motions or topic description, and approve or reject</span>
-                                  </li>
-                                  <hr>
-                                  <li class="mt-2">
-                                    <div class="d-flex">
-                                      <h5 class="item-title">Item Topic Example</h5>
-
-                                      <div class="form-group clearfix text-center ml-auto ">
-                                        <div class="icheck-primary d-inline">
-                                          <input type="checkbox" id="vote3">
-                                          <label for="vote3">
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    
                                     <span>Any motions or topic description, and approve or reject</span>
                                   </li>
                                   <hr>
@@ -345,24 +354,54 @@
                                     <div class="d-flex">
                                       <h5 class="item-title ">Item Topic Example</h5>
 
-                                      <div class="form-group clearfix text-center ml-auto ">
-                                        <div class="icheck-primary d-inline">
-                                          <input type="checkbox" id="vote4">
-                                          <label for="vote4">
-                                          </label>
+                                      <div class="vote-wrapper ml-auto">
+                                        <div class="form-group clearfix text-center vote-inline ">
+                                          <div class="icheck-primary mr-2">
+                                            <input type="radio" name="yes_no" id="vote3"></input>
+                                            <label for="vote3">
+                                              Yes
+                                            </label>
+                                          </div>
+                                          <div class="icheck-primary vote-inline">
+                                            <input type="radio" name="yes_no" id="vote33"></input>
+                                            <label for="vote33">
+                                              No
+                                            </label>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
+                                    
                                     <span>Any motions or topic description, and approve or reject</span>
                                   </li>
                                   <hr>
-                                  
-        
+                                  <li class="mt-2">
+                                    <div class="d-flex">
+                                      <h5 class="item-title ">Item Topic Example</h5>
+
+                                      <div class="vote-wrapper ml-auto">
+                                        <div class="form-group clearfix text-center vote-inline ">
+                                          <div class="icheck-primary mr-2">
+                                            <input type="radio" name="yes_no" id="vote1"></input>
+                                            <label for="vote1">
+                                              Yes
+                                            </label>
+                                          </div>
+                                          <div class="icheck-primary vote-inline">
+                                            <input type="radio" name="yes_no" id="vote"></input>
+                                            <label for="vote">
+                                              No
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <span>Any motions or topic description, and approve or reject</span>
+                                  </li>
+                                  <hr>
                                 </ol>
                               </div>
-
-                             
-
                         </section>
                      
                     </div>
@@ -375,14 +414,14 @@
                    <div class="card">
                      <div class="d-flex justify-content-end mb-2 mt-2 mr-2">
                       
-                       <div class="btn-group btn-group-toggle mr-2" data-toggle="buttons">
+                       <!-- <div class="btn-group btn-group-toggle mr-2" data-toggle="buttons">
                          <label class="btn btn-primary active">
                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Show
                          </label>
                          <label class="btn btn-primary">
                            <input type="radio" name="options" id="option2" autocomplete="off"> Hide
                          </label>
-                       </div>
+                       </div> -->
                        <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#votePoll"><i
                          class="fas fa-poll"></i> Add
                         Poll
@@ -394,24 +433,154 @@
                      <!-- Voting Modal -->
                    
                      <div class="card-body">
-                       <table class="table text-center table-striped table-responsive-sm">
-                         <thead class="thead-blue">
-                           <th>No.</th>
-                           <th>Item</th>
-                          
-                           <th class="text-center">Number of Vote</th>
+
+                       <table class="table text-center table-responsive-sm">
+                          <thead class="thead-blue">
+                            <th>No.</th>
+                            <th>Item</th> 
+                            <th class="text-center">Number of Vote</th>
+                            <th>Vote</th>
+                          </thead> 
                            <tbody>
                              <tr>
                                <td>1</td>
                                <td>Item to be voted for.</td>
                                <td class="vote-text ">1 out 4 Members have voted</td>
-                             </tr>
+                               <td> 
+                                 <div class="vote-wrapper ml-auto">
+                                  <div class="form-group clearfix text-center vote-inline ">
+                                    <div class="icheck-primary mr-2">
+                                      <input type="radio" name="yes_no" id="v2"></input>
+                                      <label for="v2">
+                                        Yes
+                                      </label>
+                                    </div>
+                                    <div class="icheck-primary vote-inline">
+                                      <input type="radio" name="yes_no" id="v21"></input>
+                                      <label for="v21">
+                                        No
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                               </td>
+                              </tr>
+                          </tbody>
+                       </table> 
+
+                      <!--Vote Result-->
+                      <table class="table">
+                        <thead class="thead-blue">
+                          <th>Members Vote result</th>
+                          <th>Yes</th>
+                          <th>No</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Mr Veerapa</td>
+                            <td><i class="fas fa-check-circle vote-tick"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Mrs B Kissoon-Luckpuuttya</td>
+                            <td><i class="fas fa-check-circle vote-tick"></i></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Dr C. Bokhoree</td>
+                            <td></td>
+                            <td><i class="fas fa-check-circle vote-tick"></i></td>
+                          </tr>
+                        </tbody>
+                      </table><!-- End Vote Result-->
+
+                       <div class="row">
+                         <div class="col-md-12 d-flex justify-content-end mb-2">
+                           <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-plus"></i> Comment</button>
+                         </div>
+                       </div>
+                    
+                      <table class="table">
+                        <thead class="thead-blue">
+                          <th>Comments</th>
+                          <th>Decision Taken</th>
+                          <th>Actions</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> This is a decision taken for Item One</td>
+                            <td>Approve</td>
+                            <td><button class="btn btn-primary"> <i class="far fa-edit"></i>Edit</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <!-- Modal -->
+                      <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            
+                            <div class="modal-body">
+                              <div class="row text-center">
+                                <div class="col-md-12">
+                                  <h4 class="meeting-heading">Comment</h4>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <table class="table">
+                                    <thead class="thead-modal">
+                                      <th>Item</th>
+                                      <th class="text-center">Status</th> 
+                                     
+                                    </thead> 
+                                    <tbody>
+                                      <td style="width:70%">1.Item Topic Example</td>
+                                      <td style="width:30%">
+                                        <div class="form-group clearfix text-center vote-inline ml-4 ">
+                                          <div class="icheck-primary mr-2">
+                                            <input type="radio" name="yes_no" id="m2">
+                                            <label for="m2">
+                                              Approve
+                                            </label>
+                                          </div>
+                                          <div class="icheck-primary vote-inline">
+                                            <input type="radio" name="yes_no" id="m21">
+                                            <label for="m21">
+                                              Reject
+                                            </label>
+                                          </div>
+                                        </div>
+                                    </td>
+
+                                    </tbody>
+                                  </table>
+                               
+
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="caption">Description</label>
+                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary">Save</button>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>  <!-- End Modal -->
                            
-                           </tbody>
-                         </thead>
-                       </table>
                      </div>
-                   </div> <!-- Voting Poll-->
+                   </div> <!-- card-->
 
 
 
@@ -576,7 +745,7 @@
                         <div class="card-body">
                           <ul class="content-sidebar-meeting">
                             <li>
-                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal">
+                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myminutes">
                                 <i class="far fa-clipboard"></i>
                                 Take minutes
                               </a>
@@ -588,15 +757,23 @@
                               </a>
                             </li>
                             <li>
-                              <a href="#" class="btn btn-primary">
+                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#notes">
                                 <i class="far fa-clipboard"></i>
                                 Take Notes
                               </a>
                             </li>
+                            <li>
+                              <a href="#" class="btn btn-primary"  data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#reschedulemeeting">
+                                <i class="far fa-calendar-alt"></i>
+                                Reschedule Meeting
+                              </a>
+                            </li>
                           </ul>
 
+                         
+                          
                            <!-- Minutes Modal -->
-                           <div id="myModal" class="modal fade" role="dialog">
+                           <div id="myminutes" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg">
 
                               <!-- Modal content-->
@@ -605,9 +782,8 @@
                                 <div class="modal-body">
                                   <div class="row text-center">
                                     <div class="col-md-12">
-                                      <h4>Meeting Minutes</h4>
+                                      <h4 class="meeting-heading">Meeting Minutes</h4>
                                     </div>
-                                   
                                   </div>
                                   <div class="row mb-2 mt-3">
                                     <div class="col-md-12 text-center">
@@ -697,9 +873,11 @@
                                     </div>
                                   </div>
                                   <div class="row">
-                                    <div class="form-group">
-                                      <label for="caption">Description</label>
-                                      <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="caption">Description</label>
+                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                      </div>
                                     </div>
                                   </div>
                                  
@@ -712,6 +890,110 @@
 
                             </div>
                             </div> <!-- End Minutes Modal -->
+
+                             <!--Reschedule Meeting-->
+                           <div id="reschedulemeeting" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                              <!-- Modal body -->
+                                <div class="modal-body">
+                                  <div class="row text-center">
+                                    <div class="col-md-12">
+                                      <h4 class="meeting-heading">Reschedule Meeting</h4>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-2 mt-3">
+                                    <div class="col-md-12 text-center">
+                                      <h6 class="underline">248<span class="smallthview"> </span> <span class="ml-3">STAFF COMMITTEE MEETING</span></h6>
+                                    </div>
+                                  </div>
+                                  <!-- <div class="row mt-1 text-center">
+                                    <div class="col-md-12 ">
+                                      <ul class="d-flex justify-content-center">
+                                        <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span class="info-minutes ml-2">Friday, January 22 2021</span></li>
+                                        <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span class="info-minutes ml-2">10:00am - 11:00 am</span> </li>
+                                        <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span class="info-minutes ml-2">Port Louis</span></li>
+                                      </ul>
+                                    </div>
+                                  </div> -->
+                                  
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label class="mb-1">From</label>
+                                        <input type="date" class="form-control">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label class="mb-1">To</label>
+                                        <input type="date" class="form-control">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label class="mb-1">Location</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                                
+                              
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="caption">Description</label>
+                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                                </div> <!-- End Modal body -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary">Reschedule</button>
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div> <!-- End Modal content-->
+                            </div>
+                          </div> <!-- End -Reschedule Meeting Modal -->
+
+                            <!--Personal Notes-->
+                            <div id="notes" class="modal fade" role="dialog">
+                              <div class="modal-dialog modal-lg">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                <!-- Modal body -->
+                                  <div class="modal-body">
+                                    <div class="row text-center">
+                                      <div class="col-md-12">
+                                        <h4 class="meeting-heading">Personal Notes</h4>
+                                      </div>
+                                    </div>
+                           
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                          <label for="caption">Description</label>
+                                          <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                  </div> <!-- End Modal body -->
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Reschedule</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div> <!-- End Modal content-->
+                              </div>
+                            </div> <!-- End -Reschedule Meeting Modal -->
+
                         </div>
                         <!-- /.card-body -->
                       </div>
@@ -824,7 +1106,7 @@
    
                                <!-- Modal Header -->
                                <div class="modal-header">
-                                 <h4 class="modal-title">Modal Heading</h4>
+                                 <h4 class="modal-title">Upload Document</h4>
                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                                </div>
    
@@ -841,12 +1123,12 @@
                                  </div>
                                  <div class="row">
                                    <div class="col-md-12">
-                                     <h5>Who can see this Document</h5>
+                                     <h5>Share Document</h5>
                                      <div class="d-flex">
                                        <p>Everyone</p>
                                        <div class="form-group clearfix text-center ml-2 ">
                                          <div class="icheck-primary d-inline">
-                                           <input type="checkbox" id="doc1">
+                                           <input type="checkbox" id="doc1" onchange="documentVal()" checked>
                                            <label for="doc1">
                                            </label>
                                          </div>
@@ -934,7 +1216,7 @@
                            </div>
                          </div>
    
-                         <table class="table table-striped text-center table-responsive-sm mt-3">
+                         <table class="table table-striped text-center table-responsive table-responsive-sm  mt-3">
                            <thead class="thead-blue">
                              <tr><th>N0.</th>
                              <th>Document Name</th>
