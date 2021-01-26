@@ -444,7 +444,7 @@
                     </table>
                   </div>
                 </div>  
-                <nav aria-label="...">
+                <nav aria-label="..." class="top-pagination">
                   <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
                       <span class="page-link">Previous</span>
@@ -464,56 +464,42 @@
                 </nav>  
               </div>
               <div class=" col col-sm-12 col-md-12 col-lg-4">
-                  <ul class="content-sidebar">
-                      <li>
-                          <a href="Users.html">
-                              <i class="fa fa-plus" aria-hidden="true"></i>
-                              Add Member
-                          </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="far fa-edit"></i>
-                            &nbsp;
-                            Edit
-                        </a>
-                    </li>
-                    <!--Modal-->
-                    <div class="modal" id="myModal">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                    
-                          <!-- Modal Header -->
-                          <div class="modal-header">
-                            <h4 class="modal-title">Message</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          </div>
-                    
-                          <!-- Modal body -->
-                          <div class="modal-body">
-                          <form>
-                            <textarea class="form-control"></textarea>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                              <button type="submit" class="btn btn-primary">Send</button>
-                            </div>
-                          </form>
-                          </div>
-                        </div>
-                    
+                  <div class="card side-card-primary">
+                    <div class="card-header side-card-header">
+
+                      <h3 class="card-title"> <i class="fas fa-cogs"></i> Actions</h3>
+
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
+                        </button>
                       </div>
-                      
+                      <!-- /.card-tools -->
                     </div>
-                    <!-- End Modal-->
-
-
-
-                      
-                      <li>
-                          <a href="#"><i class="far fa-trash-alt"></i> &nbsp; Delete</a>
-                      </li>
-                    
-                  </ul>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <ul class="content-sidebar-meeting">
+                        <li>
+                          <a href="Users.html" class="btn btn-primary">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Add Member
+                        </a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-primary">
+                            <i class="far fa-edit"></i>
+                            Edit 
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="btn btn-primary">
+                            <i class="far fa-edit"></i>
+                            Delete 
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
               </div>
             </div>
           </div>
@@ -523,12 +509,12 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>REDER - Command par  Téléphone</strong>
-    <div class="float-right d-none d-sm-inline-block">
-      <b>2020</b> 1.0.0
+  <footer class="main-footer d-flex justify-content-end">
+    <div class="copyright-info">
+      Provided by SAIM Ltd<span></span>
     </div>
   </footer>
+
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

@@ -33,9 +33,7 @@ $(document).ready(function(readyEvent) {
 
 
 function documentVal()
-    { 
-     
-     
+    {
         if($('#doc1').is(":checked"))   
             $(".memberlist").hide();
         else

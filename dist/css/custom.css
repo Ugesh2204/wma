@@ -244,6 +244,14 @@ label {
   color:#fff;
 }
 
+.message-meeting p span {
+  display: block;
+}
+
+.notif-bold {
+  font-weight: 600;
+  color:var(--window);
+}
 
 
 
@@ -932,9 +940,12 @@ display: block;
   border-bottom: 4px solid #002B3C;
 }
 
+.top-pagination {
+  margin: 1rem 0rem  1rem 0rem;
+}
 
 
-
+}
 
 
 
@@ -985,7 +996,7 @@ display: block;
   }
 
   .notif-position {
-    right: -269px !important ;
+    right: -191px !important ;
   }
 
   .image-cell {
@@ -1012,6 +1023,18 @@ display: block;
     -webkit-overflow-scrolling: touch;
   }
 
+  .viewmeeting {
+      display: block;
+  }
+
+  .innerdatecard {
+    line-height: 1.8rem;
+  }
+
+  .viewtext {
+    display: none;
+  }
+
 }
 
 
@@ -1032,7 +1055,13 @@ display: block;
   }
 
 
- 
+  .notif-position {
+    right: -181px !important ;
+  }
+
+  .viewtext {
+    display: none;
+  }
 
 
 }
