@@ -169,11 +169,11 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            
+
             <li class="nav-item">
               <a href="Upcomingmeetings.html" class="nav-link">
                 <i class="far fa-calendar-alt"></i>
-                 Upcoming Meetings
+                Upcoming Meetings
               </a>
             </li>
             <li class="nav-item">
@@ -185,40 +185,40 @@
             <li class="nav-item">
               <a href="Minutes.html" class="nav-link">
                 <i class="fas fa-sticky-note"></i>
-                 Minutes
+                Minutes
               </a>
             </li>
             <li class="nav-item">
               <a href="Users.html" class="nav-link">
-                  <i class="fas fa-user-plus"></i>
-                  Add Member
+                <i class="fas fa-user-plus"></i>
+                Add Member
               </a>
             </li>
             <li class="nav-item">
               <a href="ListOfUsers.html" class="nav-link">
                 <i class="fas fa-list"></i>
-                 List of Members
+                List of Members
               </a>
             </li>
-  
+
             <li class="nav-item">
               <a href="Subcommitee.html" class="nav-link">
                 <i class="far fa-clipboard"></i>
-                  Sub Committees
+                Sub Committees
               </a>
             </li>
-  
+
             <li class="nav-item">
               <a href="Meeting.html" class="nav-link">
                 <i class="far fa-calendar"></i>
-                  Create Meetings
+                Create Meetings
               </a>
             </li>
-  
+
             <li class="nav-item">
               <a href="UserActivitylog.html" class="nav-link">
                 <i class="fas fa-user"></i>
-                  User activity Log
+                User activity Log
               </a>
             </li>
           </ul>
@@ -236,7 +236,7 @@
         <div class="container-fluid">
           <div class="row">
 
-           
+
             <!-- <div class="success-msg">
               <i class="fa fa-check"></i>
               This is a success message.
@@ -254,200 +254,154 @@
 
             <div class="col-md-11 col-sm-12 mx-auto whitebgbox">
 
-  
+
               <h4 class="titleLv2">
                 Meeting Space
               </h4>
-            
+
               <div class="row">
                 <div class=" col-sm-12 col-md-12 col-lg-8 inner-content">
                   <div class="card ">
                     <div class="card-body">
                       <div class="d-flex justify-content-end">
-                        <button class="btn btn-primary"><i class="fas fa-users"></i> Join Meetion</button>
+                        <button class="btn btn-primary mr-1"><i class="fas fa-users"></i> Join Meeting</button>
+                        <button class="btn btn-danger"><i class="far fa-clock"></i> End Meeting</button>
                       </div>
-                     
+                      <div class="row">
+                        <div class="col-md-6 info-meeeting"><b>Our Reference:</b> WMA-SC/248</div>
+                      </div>
+                      <div class="row mt-4">
+                        <ul>
+                          <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span
+                              class="info-meeeting ml-2">Friday, January 22 2021</span></li>
+                          <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span
+                              class="info-meeeting ml-2">10:00am - 11:00 am</span> </li>
+                          <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span
+                              class="info-meeeting ml-2">Port Louis</span></li>
+                        </ul>
+                      </div>
+                      <section>
+                        <div class="row mb-3 mt-3">
+                          <div class="col-md-12 text-center">
+                            <h4 class="underline">248<span class="smallthview"> </span> <span class="ml-3">STAFF
+                                COMMITTEE MEETING</span></h4>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h4 class="meeting-heading">The Agenda for the meeting is :</h4>
+                          </div>
+                        </div>
 
                         <div class="row">
-                          <div class="col-md-6 info-meeeting"><b>Our Reference:</b> WMA-SC/248</div>
-                        </div>
-                        <div class="row mt-4">
-                          <ul>
-                            <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span class="info-meeeting ml-2">Friday, January 22 2021</span></li>
-                            <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span class="info-meeeting ml-2">10:00am - 11:00 am</span> </li>
-                            <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span class="info-meeeting ml-2">Port Louis</span></li>
-                          </ul>
-                        </div>
-                        <section>
-                          <div class="row mb-3 mt-3">
-                            <div class="col-md-12 text-center">
-                              <h4 class="underline">248<span class="smallthview"> </span> <span class="ml-3">STAFF COMMITTEE MEETING</span></h4>
-                            </div>
-                          </div>
+                          <ol class="col-md-12 pl-4 pr-4" id="items-wrapper">
+                            <li class="mt-2">
+                              <div class="d-flex">
+                                <h5 class="item-title ">Item Topic Example</h5>
 
-                    
+                                <div class="vote-wrapper ml-auto">
+                                  <div class="form-group clearfix text-center vote-inline ">
+                                    <div class="icheck-primary mr-2">
 
+                                      <input type="checkbox" id="1">
+                                      <label for="1">
+                                      </label>
+                                    </div>
 
-                          
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <h4 class="meeting-heading">The Agenda for the meeting is :</h4>
+                                  </div>
                                 </div>
                               </div>
-                             
-                              <div class="row">
-                                <ol class="col-md-12 pl-4 pr-4">
-                                  <div class="row">
-                                    <span class=" voting ml-auto pl-1 pr-2">Vote</span>
+
+                              <span>Any motions or topic description, and approve or reject</span>
+                            </li>
+                            <hr>
+                            <li class="mt-2">
+                              <div class="d-flex">
+                                <h5 class="item-title ">Item Topic Example</h5>
+
+                                <div class="vote-wrapper ml-auto">
+                                  <div class="form-group clearfix text-center vote-inline ">
+                                    <div class="icheck-primary mr-2">
+
+                                      <input type="checkbox" id="2">
+                                      <label for="2">
+                                      </label>
+                                    </div>
+
                                   </div>
-                                  <li class="mt-2">
-                                    <div class="d-flex">
-                                      <h5 class="item-title ">Item Topic Example</h5>
-
-                                      <div class="vote-wrapper ml-auto">
-                                        <div class="form-group clearfix text-center vote-inline ">
-                                          <div class="icheck-primary mr-2">
-                                            <input type="radio" name="yes_no" id="vote1"></input>
-                                            <label for="vote1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="icheck-primary vote-inline">
-                                            <input type="radio" name="yes_no" id="vote"></input>
-                                            <label for="vote">
-                                              No
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                    <span>Any motions or topic description, and approve or reject</span>
-                                  </li>
-                                  <hr>
-                                  <li class="mt-2">
-                                    <div class="d-flex">
-                                      <h5 class="item-title ">Item Topic Example</h5>
-
-                                      <div class="vote-wrapper ml-auto">
-                                        <div class="form-group clearfix text-center vote-inline ">
-                                          <div class="icheck-primary mr-2">
-                                            <input type="radio" name="yes_no" id="vote2"></input>
-                                            <label for="vote2">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="icheck-primary vote-inline">
-                                            <input type="radio" name="yes_no" id="vote21"></input>
-                                            <label for="vote21">
-                                              No
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                    <span>Any motions or topic description, and approve or reject</span>
-                                  </li>
-                                  <hr>
-                                  <li class="mt-2">
-                                    <div class="d-flex">
-                                      <h5 class="item-title ">Item Topic Example</h5>
-
-                                      <div class="vote-wrapper ml-auto">
-                                        <div class="form-group clearfix text-center vote-inline ">
-                                          <div class="icheck-primary mr-2">
-                                            <input type="radio" name="yes_no" id="vote3"></input>
-                                            <label for="vote3">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="icheck-primary vote-inline">
-                                            <input type="radio" name="yes_no" id="vote33"></input>
-                                            <label for="vote33">
-                                              No
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                    <span>Any motions or topic description, and approve or reject</span>
-                                  </li>
-                                  <hr>
-                                  <li class="mt-2">
-                                    <div class="d-flex">
-                                      <h5 class="item-title ">Item Topic Example</h5>
-
-                                      <div class="vote-wrapper ml-auto">
-                                        <div class="form-group clearfix text-center vote-inline ">
-                                          <div class="icheck-primary mr-2">
-                                            <input type="radio" name="yes_no" id="vote1"></input>
-                                            <label for="vote1">
-                                              Yes
-                                            </label>
-                                          </div>
-                                          <div class="icheck-primary vote-inline">
-                                            <input type="radio" name="yes_no" id="vote"></input>
-                                            <label for="vote">
-                                              No
-                                            </label>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                    <span>Any motions or topic description, and approve or reject</span>
-                                  </li>
-                                  <hr>
-                                </ol>
+                                </div>
                               </div>
-                        </section>
-                     
+
+                              <span>Any motions or topic description, and approve or reject</span>
+                            </li>
+                            <hr>
+                            <li class="mt-2">
+                              <div class="d-flex">
+                                <h5 class="item-title ">Item Topic Example</h5>
+
+                                <div class="vote-wrapper ml-auto">
+                                  <div class="form-group clearfix text-center vote-inline ">
+                                    <div class="icheck-primary mr-2">
+
+                                      <input type="checkbox" id="3">
+                                      <label for="3">
+                                      </label>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+
+                              <span>Any motions or topic description, and approve or reject</span>
+                            </li>
+                            <hr>
+                            <li class="mt-2">
+                              <div class="d-flex">
+                                <h5 class="item-title ">Item Topic Example</h5>
+
+                                <div class="vote-wrapper ml-auto">
+                                  <div class="form-group clearfix text-center vote-inline ">
+                                    <div class="icheck-primary mr-2">
+
+                                      <input type="checkbox" id="4">
+                                      <label for="4">
+                                      </label>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+
+                              <span>Any motions or topic description, and approve or reject</span>
+                            </li>
+                            <hr>
+                          </ol>
+                        </div>
+                      </section>
                     </div>
                   </div>
-                  
-                  
 
-                   <!-- Voting Poll-->
-                   <h4>Voting Poll</h4>
-                   <div class="card">
-                     <div class="d-flex justify-content-end mb-2 mt-2 mr-2">
-                      
-                       <!-- <div class="btn-group btn-group-toggle mr-2" data-toggle="buttons">
-                         <label class="btn btn-primary active">
-                           <input type="radio" name="options" id="option1" autocomplete="off" checked> Show
-                         </label>
-                         <label class="btn btn-primary">
-                           <input type="radio" name="options" id="option2" autocomplete="off"> Hide
-                         </label>
-                       </div> -->
-                       <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#votePoll"><i
-                         class="fas fa-poll"></i> Add
-                        Poll
-                        </a> -->
-                     </div>
 
-                     
-                    
-                     <!-- Voting Modal -->
-                   
-                     <div class="card-body">
+                  <!-- Voting Poll-->
+                  <h4>Voting Poll</h4>
+                  <div class="card">
+                    <div class="card-body">
 
-                       <table class="table text-center table-responsive-sm">
+                      <div class="wrapper-decision">
+                        <table class="table text-center table-responsive-sm">
                           <thead class="thead-blue">
                             <th>No.</th>
-                            <th>Item</th> 
+                            <th>Item</th>
                             <th class="text-center">Number of Vote</th>
                             <th>Vote</th>
-                          </thead> 
-                           <tbody>
-                             <tr>
-                               <td>1</td>
-                               <td>Item to be voted for.</td>
-                               <td class="vote-text ">1 out 4 Members have voted</td>
-                               <td> 
-                                 <div class="vote-wrapper ml-auto">
+                          </thead>
+                          <tbody>
+                            <tr class="align-items-center">
+                              <td>1</td>
+                              <td>Item to be voted for.</td>
+                              <td class="vote-text">1 out 4 Members have voted</td>
+                              <td>
+                                <div class="vote-wrapper ml-auto">
                                   <div class="form-group clearfix text-center vote-inline ">
                                     <div class="icheck-primary mr-2">
                                       <input type="radio" name="yes_no" id="v2"></input>
@@ -463,280 +417,144 @@
                                     </div>
                                   </div>
                                 </div>
-                               </td>
-                              </tr>
+                              </td>
+                            </tr>
                           </tbody>
-                       </table> 
+                        </table>
 
-                      <!--Vote Result-->
-                      <table class="table">
-                        <thead class="thead-blue">
-                          <th>Members Vote result</th>
-                          <th>Yes</th>
-                          <th>No</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Mr Veerapa</td>
-                            <td><i class="fas fa-check-circle vote-tick"></i></td>
-                          </tr>
-                          <tr>
-                            <td>Mrs B Kissoon-Luckpuuttya</td>
-                            <td><i class="fas fa-check-circle vote-tick"></i></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td>Dr C. Bokhoree</td>
-                            <td></td>
-                            <td><i class="fas fa-check-circle vote-tick"></i></td>
-                          </tr>
-                        </tbody>
-                      </table><!-- End Vote Result-->
+                        <!--Vote Result-->
+                        <table class="table">
+                          <thead class="thead-blue">
+                            <th>Members Vote result</th>
+                            <th>Yes</th>
+                            <th>No</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Mr Veerapa</td>
+                              <td><i class="fas fa-check-circle vote-tick"></i></td>
+                            </tr>
+                            <tr>
+                              <td>Mrs B Kissoon-Luckpuuttya</td>
+                              <td><i class="fas fa-check-circle vote-tick"></i></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Dr C. Bokhoree</td>
+                              <td></td>
+                              <td><i class="fas fa-check-circle vote-tick"></i></td>
+                            </tr>
+                          </tbody>
+                        </table><!-- End Vote Result-->
 
-                       <div class="row">
-                         <div class="col-md-12 d-flex justify-content-end mb-2">
-                           <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fas fa-plus"></i> Comment</button>
-                         </div>
-                       </div>
-                    
-                      <table class="table">
-                        <thead class="thead-blue">
-                          <th>Comments</th>
-                          <th>Decision Taken</th>
-                          <th>Actions</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td> This is a decision taken for Item One</td>
-                            <td>Approve</td>
-                            <td><button class="btn btn-primary"> <i class="far fa-edit"></i>Edit</button></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                        <div class="row">
+                          <div class="col-md-12 d-flex justify-content-end mb-2">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-plus"></i> Comment</button>
+                          </div>
+                        </div>
 
-                      <!-- Modal -->
-                      <div id="myModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg">
+                        <table class="table">
+                          <thead class="thead-blue">
+                            <th>Comments</th>
+                            <th>Decision Taken</th>
+                            <th>Actions</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> This is a decision taken for Item One</td>
+                              <td>Approve</td>
+                              <td><button class="btn btn-primary"> <i class="far fa-edit"></i>Edit</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
 
-                          <!-- Modal content-->
-                          <div class="modal-content">
-                            
-                            <div class="modal-body">
-                              <div class="row text-center">
-                                <div class="col-md-12">
-                                  <h4 class="meeting-heading">Comment</h4>
+                        <!-- Modal -->
+                        <div id="myModal" class="modal fade" role="dialog">
+                          <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+
+                              <div class="modal-body">
+                                <div class="row text-center">
+                                  <div class="col-md-12">
+                                    <h4 class="meeting-heading">Comment</h4>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <table class="table">
-                                    <thead class="thead-modal">
-                                      <th>Item</th>
-                                      <th class="text-center">Status</th> 
-                                     
-                                    </thead> 
-                                    <tbody>
-                                      <td style="width:70%">1.Item Topic Example</td>
-                                      <td style="width:30%">
-                                        <div class="form-group clearfix text-center vote-inline ml-4 ">
-                                          <div class="icheck-primary mr-2">
-                                            <input type="radio" name="yes_no" id="m2">
-                                            <label for="m2">
-                                              Approve
-                                            </label>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <table class="table">
+                                      <thead class="thead-modal">
+                                        <th>Item</th>
+                                        <th class="text-center">Status</th>
+
+                                      </thead>
+                                      <tbody>
+                                        <td style="width:70%">1.Item Topic Example</td>
+                                        <td style="width:30%">
+                                          <div class="form-group clearfix text-center vote-inline ml-4 ">
+                                            <div class="icheck-primary mr-2">
+                                              <input type="radio" name="yes_no" id="m2">
+                                              <label for="m2">
+                                                Approve
+                                              </label>
+                                            </div>
+                                            <div class="icheck-primary vote-inline">
+                                              <input type="radio" name="yes_no" id="m21">
+                                              <label for="m21">
+                                                Reject
+                                              </label>
+                                            </div>
                                           </div>
-                                          <div class="icheck-primary vote-inline">
-                                            <input type="radio" name="yes_no" id="m21">
-                                            <label for="m21">
-                                              Reject
-                                            </label>
-                                          </div>
+                                        </td>
+
+                                      </tbody>
+                                    </table>
+
+
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                          <label for="caption">Description</label>
+                                          <textarea class="form-control" name="description" id="" cols="30"
+                                            rows="10"></textarea>
                                         </div>
-                                    </td>
-
-                                    </tbody>
-                                  </table>
-                               
-
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="caption">Description</label>
-                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
                                       </div>
                                     </div>
+
                                   </div>
-                                  
                                 </div>
                               </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-primary">Save</button>
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
+
                           </div>
-
-                        </div>
-                      </div>  <!-- End Modal -->
-                           
-                     </div>
-                   </div> <!-- card-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <!-- <div class="card ">
-                    <div class="card-body">
-                      <section>
-                        <div class="row mt-5">
-                          <p>Dear Sir,</p>
-                        </div>
-                        <div class="row ">
-                          <div class="col-md-12 text-center">
-                            <span class="underline"><b>242 th AUDIT AND RIsk COMMITTEE</b></span>
-                          </div>
-                        </div>
-                        <div class="row mt-3">
-                          <div class="col-md-12">
-                            Your are kindly invited to attend the <span class="underline">242th <b>AUDIT AND RIsk COMMITTEE</b></span>
-                            meeting of the <b>Wastewater Management Authority Board</b>
-                            that will be held on <span class="underline"><b>20/01/2021</b> at <b>10.30 hrs</b></span> in the Board Room <span class="underline">(level 9)</span>
-                            of the Wastewater Management Authority, The Célicourt, Cé:licourt. Anteleme Street Port Louis.
-                          </div>
-    
-                        </div>
-                      </section>
-                    </div>
-                  </div>  -->
-
-                  <!-- <h4>Agenda </h4>
-                  <div class="card ">
-                    <div class="card-body">
-                      
-                      <div class="row">
-                        
-                        <ol>
-                          <li class="mt-2">
-                            <h5>A  Item Topic Example</h5>
-                            <span>A description of the topic</span>
-                          </li>
-                          <li class="mt-2">
-                            <h5>B  Item Topic Example</h5>
-                            <span>A description of the topic</span>
-                          </li>
-                          <li class="mt-2"><h5>C  Item Topic Example</h5>
-                            <span>A description of the topic</span>
-                          </li>
-
-                          <li class="mt-2"><h5>D  Item Topic Example</h5>
-                            <span>A description of the topic</span>
-                          </li>
-
-                        </ol>
+                        </div> <!-- End Modal -->
                       </div>
 
                     </div>
-                  </div> -->
-                  
-                  <!-- <h4>Documents</h4>
-                  <div class="card ">
-                    <div class="card-body">
-                      <table class="table table-striped text-center table-responsive-sm">
-                        <thead class="thead-blue">
-                          <th>N0.</th>
-                          <th>Document Name</th>
-                          <th>View</th>
-                          <th>Download</th>
-                          <th>Action</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Example.docx</td>
-                            <td> 
-                              <div class="form-group clearfix">
-                                <div class="form-group clearfix text-center">
-                                  <div class="icheck-primary d-inline">
-                                    <input type="checkbox" id="view1">
-                                    <label for="view1">
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                            </td>
-                            <td>
-                              <div class="form-group clearfix text-center">
-                                <div class="icheck-primary d-inline">
-                                  <input type="checkbox" id="download1" >
-                                  <label for="download1">
-                                  </label>
-                                </div>
-                              </div>
-                            </td>
-                          <td>
-                            <a href="#" <i class="fas fa-file-download down-icon"></i> </a>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Example.docx</td>
-                            <td> 
-                              <div class="form-group clearfix">
-                                <div class="form-group clearfix text-center">
-                                  <div class="icheck-primary d-inline">
-                                    <input type="checkbox" id="view2">
-                                    <label for="view2">
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                            </td>
-                            <td>
-                              <div class="form-group clearfix text-center">
-                                <div class="icheck-primary d-inline">
-                                  <input type="checkbox" id="download2" >
-                                  <label for="download2">
-                                  </label>
-                                </div>
-                              </div>
-                            </td>
-                          <td>
-                            <a href="#" <i class="fas fa-file-download down-icon"></i> </a>
-                          </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div> 
-                   -->
-             
-                 
+                  </div> <!-- card-->
+
+
                 </div><!-- End col-lg-8 inner-content-->
 
                 <div class=" col col-sm-12 col-md-12 col-lg-4">
-                 
-                   <!--Actions-->
-                   <div class="row">
+
+                  <!--Actions-->
+                  <div class="row">
                     <div class="col-md-12">
                       <div class="card side-card-primary">
                         <div class="card-header side-card-header">
-                        
+
                           <h3 class="card-title"> <i class="fas fa-cogs"></i> Actions</h3>
-                        
+
                           <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
+                                class="fas fa-plus"></i>
                             </button>
                           </div>
                           <!-- /.card-tools -->
@@ -745,40 +563,43 @@
                         <div class="card-body">
                           <ul class="content-sidebar-meeting">
                             <li>
-                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myminutes">
+                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static"
+                                data-keyboard="false" data-target="#myminutes">
                                 <i class="far fa-clipboard"></i>
                                 Take minutes
                               </a>
                             </li>
                             <li>
-                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal">
+                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static"
+                                data-keyboard="false" data-target="#myModal">
                                 <i class="far fa-edit"></i>
                                 Edit minutes
                               </a>
                             </li>
-                            <li>
+                            <!-- <li>
                               <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#notes">
                                 <i class="far fa-clipboard"></i>
                                 Take Notes
                               </a>
-                            </li>
+                            </li> -->
                             <li>
-                              <a href="#" class="btn btn-primary"  data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#reschedulemeeting">
+                              <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static"
+                                data-keyboard="false" data-target="#reschedulemeeting">
                                 <i class="far fa-calendar-alt"></i>
                                 Reschedule Meeting
                               </a>
                             </li>
                           </ul>
 
-                         
-                          
-                           <!-- Minutes Modal -->
-                           <div id="myminutes" class="modal fade" role="dialog">
+
+
+                          <!-- Minutes Modal -->
+                          <div id="myminutes" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg">
 
                               <!-- Modal content-->
                               <div class="modal-content">
-                               <!-- Modal body -->
+                                <!-- Modal body -->
                                 <div class="modal-body">
                                   <div class="row text-center">
                                     <div class="col-md-12">
@@ -787,16 +608,20 @@
                                   </div>
                                   <div class="row mb-2 mt-3">
                                     <div class="col-md-12 text-center">
-                                      <h6 class="underline">248<span class="smallthview"> </span> <span class="ml-3">STAFF COMMITTEE MEETING</span></h6>
-                                      
+                                      <h6 class="underline">248<span class="smallthview"> </span> <span
+                                          class="ml-3">STAFF COMMITTEE MEETING</span></h6>
+
                                     </div>
                                   </div>
                                   <div class="row mt-1 text-center">
                                     <div class="col-md-12 ">
                                       <ul class="d-flex justify-content-center">
-                                        <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span class="info-minutes ml-2">Friday, January 22 2021</span></li>
-                                        <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span class="info-minutes ml-2">10:00am - 11:00 am</span> </li>
-                                        <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span class="info-minutes ml-2">Port Louis</span></li>
+                                        <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span
+                                            class="info-minutes ml-2">Friday, January 22 2021</span></li>
+                                        <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span
+                                            class="info-minutes ml-2">10:00am - 11:00 am</span> </li>
+                                        <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span
+                                            class="info-minutes ml-2">Port Louis</span></li>
                                       </ul>
                                     </div>
                                   </div>
@@ -876,11 +701,12 @@
                                     <div class="col-md-12">
                                       <div class="form-group">
                                         <label for="caption">Description</label>
-                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                        <textarea class="form-control" name="description" id="" cols="30"
+                                          rows="10"></textarea>
                                       </div>
                                     </div>
                                   </div>
-                                 
+
                                 </div> <!-- End Modal body -->
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-primary">Save</button>
@@ -889,14 +715,14 @@
                               </div> <!-- End Modal content-->
 
                             </div>
-                            </div> <!-- End Minutes Modal -->
+                          </div> <!-- End Minutes Modal -->
 
-                             <!--Reschedule Meeting-->
-                           <div id="reschedulemeeting" class="modal fade" role="dialog">
+                          <!--Reschedule Meeting-->
+                          <div id="reschedulemeeting" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg">
                               <!-- Modal content-->
                               <div class="modal-content">
-                              <!-- Modal body -->
+                                <!-- Modal body -->
                                 <div class="modal-body">
                                   <div class="row text-center">
                                     <div class="col-md-12">
@@ -905,7 +731,8 @@
                                   </div>
                                   <div class="row mb-2 mt-3">
                                     <div class="col-md-12 text-center">
-                                      <h6 class="underline">248<span class="smallthview"> </span> <span class="ml-3">STAFF COMMITTEE MEETING</span></h6>
+                                      <h6 class="underline">248<span class="smallthview"> </span> <span
+                                          class="ml-3">STAFF COMMITTEE MEETING</span></h6>
                                     </div>
                                   </div>
                                   <!-- <div class="row mt-1 text-center">
@@ -917,7 +744,7 @@
                                       </ul>
                                     </div>
                                   </div> -->
-                                  
+
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-group">
@@ -942,18 +769,19 @@
                                       </div>
                                     </div>
                                   </div>
-                                
-                                
-                              
+
+
+
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-group">
                                         <label for="caption">Description</label>
-                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                                        <textarea class="form-control" name="description" id="" cols="30"
+                                          rows="10"></textarea>
                                       </div>
                                     </div>
                                   </div>
-                                
+
                                 </div> <!-- End Modal body -->
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-primary">Reschedule</button>
@@ -963,55 +791,58 @@
                             </div>
                           </div> <!-- End -Reschedule Meeting Modal -->
 
-                            <!--Personal Notes-->
-                            <div id="notes" class="modal fade" role="dialog">
-                              <div class="modal-dialog modal-lg">
-                                <!-- Modal content-->
-                                <div class="modal-content">
+                          <!--Personal Notes-->
+                          <div id="notes" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                              <!-- Modal content-->
+                              <div class="modal-content">
                                 <!-- Modal body -->
-                                  <div class="modal-body">
-                                    <div class="row text-center">
-                                      <div class="col-md-12">
-                                        <h4 class="meeting-heading">Personal Notes</h4>
-                                      </div>
+                                <div class="modal-body">
+                                  <div class="row text-center">
+                                    <div class="col-md-12">
+                                      <h4 class="meeting-heading">Personal Notes</h4>
                                     </div>
-                           
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <div class="form-group">
-                                          <label for="caption">Description</label>
-                                          <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  
-                                  </div> <!-- End Modal body -->
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Reschedule</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                   </div>
-                                </div> <!-- End Modal content-->
-                              </div>
-                            </div> <!-- End -Reschedule Meeting Modal -->
+
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                        <label for="caption">Description</label>
+                                        <textarea class="form-control" name="description" id="" cols="30"
+                                          rows="10"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div> <!-- End Modal body -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary">Reschedule</button>
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div> <!-- End Modal content-->
+                            </div>
+                          </div> <!-- End -Reschedule Meeting Modal -->
 
                         </div>
                         <!-- /.card-body -->
                       </div>
                       <!-- /.card -->
                     </div>
-                  
-                  </div><!--End Actions-->
+
+                  </div>
+                  <!--End Actions-->
 
                   <!--Members-->
                   <div class="row">
                     <div class="col-md-12">
                       <div class="card side-card-primary">
                         <div class="card-header side-card-header">
-                        
+
                           <h3 class="card-title"> <i class="fas fa-user-friends"></i> Members</h3>
-                        
+
                           <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
+                                class="fas fa-plus"></i>
                             </button>
                           </div>
                           <!-- /.card-tools -->
@@ -1021,7 +852,7 @@
                           <!--memberlist-->
                           <div class="memberlists">
                             <table class="table table-striped table-responsive-sm">
-                    
+
                               <!-- <thead class="thead-blue">
                                 <th>List of Members</th>
                                 <th></th>
@@ -1029,267 +860,275 @@
                                 <th class="text-center"></th>
                               </thead> -->
                               <tbody>
-                              <tr>
-                                <td><b>Mr Veerapa</b></td>
-                                <td></td>
-                                <td><b>- Chairman</b></td>
-                                <td>
-                                  <i class="fas fa-circle login-status"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><b>Mrs  B Kissoon-Luckpuuttya</b></td>
-                                <td></td>
-                                <td><b>- Member</b></td>
-                                <td>
-                                  <i class="fas fa-circle notlogin-status"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><b>Dr C. Bokhoree</b></td>
-                                <td></td>
-                                <td><b>- Member</b></td>
-                                <td>
-                                  <i class="fas fa-circle login-status"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><b>Mr S.Khuntoo</b></td>
-                                <td></td>
-                                <td><b>- Member</b></td>
-                                <td>
-                                  <i class="fas fa-circle notlogin-status"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><span><b>Mr N.Jowaheer,</b> <b>Officer in charge</b></span></td>
-                                <td></td>
-                                <td><b>- In Attendance</b></td>
-                                <td>
-                                  <i class="fas fa-circle login-status"></i>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          </div><!--memberlist-->
+                                <tr>
+                                  <td><b>Mr Veerapa</b></td>
+                                  <td></td>
+                                  <td><b>- Chairman</b></td>
+                                  <td>
+                                    <i class="fas fa-circle login-status"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><b>Mrs B Kissoon-Luckpuuttya</b></td>
+                                  <td></td>
+                                  <td><b>- Member</b></td>
+                                  <td>
+                                    <i class="fas fa-circle notlogin-status"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><b>Dr C. Bokhoree</b></td>
+                                  <td></td>
+                                  <td><b>- Member</b></td>
+                                  <td>
+                                    <i class="fas fa-circle login-status"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><b>Mr S.Khuntoo</b></td>
+                                  <td></td>
+                                  <td><b>- Member</b></td>
+                                  <td>
+                                    <i class="fas fa-circle notlogin-status"></i>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><span><b>Mr N.Jowaheer,</b> <b>Officer in charge</b></span></td>
+                                  <td></td>
+                                  <td><b>- In Attendance</b></td>
+                                  <td>
+                                    <i class="fas fa-circle login-status"></i>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!--memberlist-->
                         </div>
                         <!-- /.card-body -->
                       </div>
                       <!-- /.card -->
                     </div>
-                  
-                  </div><!--Members-->
+
+                  </div>
+                  <!--Members-->
 
                   <!--Documents-->
                   <div class="row">
                     <div class="col-md-12">
                       <div class="card card-primary collapsed-card">
                         <div class="card-header side-card-header">
-                        
+
                           <h3 class="card-title"> <i class="fas fa-file-alt"></i> Documents</h3>
-                         
-          
+
+
                           <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
+                                class="fas fa-plus"></i>
                             </button>
                           </div>
                           <!-- /.card-tools -->
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                          <button class="btn btn-primary" data-toggle="modal" data-target="#doc">Upload Documents</button>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#doc">Upload
+                            Documents</button>
 
                           <!-- The Modal -->
-                         <div class="modal" id="doc">
-                           <div class="modal-dialog">
-                             <div class="modal-content">
-   
-                               <!-- Modal Header -->
-                               <div class="modal-header">
-                                 <h4 class="modal-title">Upload Document</h4>
-                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                               </div>
-   
-                               <!-- Modal body -->
-                               <div class="modal-body">
+                          <div class="modal" id="doc">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Upload Document</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
                                   <div class="row">
-                                   <div class="col-md-12">
-   
-                                     <input type="file" id="uploadFile" name="FileUpload" multiple="multiple" />
-                                     <div id="upload_prev"></div>
-                                     <input type="checkbox" id="clearOnDelete" class="hide" value=1 checked/>
-                               
-                                   </div>
-                                 </div>
-                                 <div class="row">
-                                   <div class="col-md-12">
-                                     <h5>Share Document</h5>
-                                     <div class="d-flex">
-                                       <p>Everyone</p>
-                                       <div class="form-group clearfix text-center ml-2 ">
-                                         <div class="icheck-primary d-inline">
-                                           <input type="checkbox" id="doc1" onchange="documentVal()" checked>
-                                           <label for="doc1">
-                                           </label>
-                                         </div>
-                                       </div>
-                                       <p>Individuals</p>
-                                       <div class="form-group clearfix text-center ml-2 ">
-                                         <div class="icheck-primary d-inline">
-                                           <input type="checkbox" id="doc2" onchange="documentVal()">
-                                           <label for="doc2">
-                                           </label>
-                                         </div>
-                                       </div>
-                                     </div>
-   
-                                     <!--memberlist-->
-                                     <div class="memberlist">
-                                       <table class="table table-striped table-responsive-sm">
-                               
-                                         <thead class="thead-blue">
-                                           <th>Members</th>
-                                           <th></th>
-                                           <th></th>
-                                           <th class="text-center"></th>
-                                         </thead>
-                                         <tbody>
-                                         <tr>
-                                           <td><b>Mr Veerapa</b></td>
-                                           <td></td>
-                                           <td><b>- Chairman</b></td>
-                                           <td>
-                                             <div class="form-group clearfix text-center">
-                                             <div class="icheck-primary d-inline">
-                                               <input type="checkbox" id="checkboxPrimary1" checked>
-                                               <label for="checkboxPrimary1">
-                                               </label>
-                                             </div>
-                                             </div>
-                                           </td>
-                                         </tr>
-                                         <tr>
-                                           <td><b>Mrs  B Kissoon-Luckpuuttya</b></td>
-                                           <td></td>
-                                           <td><b>- Member</b></td>
-                                           <td>
-                                             <div class="form-group clearfix text-center">
-                                             <div class="icheck-primary d-inline">
-                                               <input type="checkbox" id="checkboxPrimary2">
-                                               <label for="checkboxPrimary2">
-                                               </label>
-                                             </div>
-                                             </div>
-                                           </td>
-                                         </tr>
-                                         <tr>
-                                           <td><span><b>Mr N.Jowaheer</b> <b>Officer in charge</b></span></td>
-                                           <td></td>
-                                           <td><b>- In Attendance</b></td>
-                                           <td>
-                                             <div class="form-group clearfix text-center">
-                                             <div class="icheck-primary d-inline">
-                                               <!-- <div class="round"> -->
-                                                 <input type="checkbox" id="checkbox" />
-                                                 <label for="checkbox"></label>
-                                               <!-- </div> -->
-                                             </div>
-                                             </div>
-                                           </td>
-                                         </tr>
-                                       </tbody>
-                                     </table>
-                                     </div><!--memberlist-->
-                                     
-                                    
-                                   </div>
-                                 </div>
-                               </div>
-   
-                               <!-- Modal footer -->
-                               <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Save</button>
-                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                               </div>
-   
-                             </div>
-                           </div>
-                         </div>
-   
-                         <table class="table table-striped text-center table-responsive table-responsive-sm  mt-3">
-                           <thead class="thead-blue">
-                             <tr><th>N0.</th>
-                             <th>Document Name</th>
-                             <th>View</th>
-                             <th>Download</th>
-                             <th>Action</th>
-                           </tr></thead>
-                           <tbody>
-                             <tr>
-                               <td>1</td>
-                               <td>Example.docx</td>
-                               <td> 
-                                 <div class="form-group clearfix">
-                                   <div class="form-group clearfix text-center">
-                                     <div class="icheck-primary d-inline">
-                                       <input type="checkbox" id="view1">
-                                       <label for="view1">
-                                       </label>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 
-                               </td>
-                               <td>
-                                 <div class="form-group clearfix text-center">
-                                   <div class="icheck-primary d-inline">
-                                     <input type="checkbox" id="download1">
-                                     <label for="download1">
-                                     </label>
-                                   </div>
-                                 </div>
-                               </td>
-                             <td>
-                               <a href="#"><i class="fas fa-file-download down-icon"></i> </a>
-                             </td>
-                             </tr>
-                             <tr>
-                               <td>2</td>
-                               <td>Example.docx</td>
-                               <td> 
-                                 <div class="form-group clearfix">
-                                   <div class="form-group clearfix text-center">
-                                     <div class="icheck-primary d-inline">
-                                       <input type="checkbox" id="view2">
-                                       <label for="view2">
-                                       </label>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 
-                               </td>
-                               <td>
-                                 <div class="form-group clearfix text-center">
-                                   <div class="icheck-primary d-inline">
-                                     <input type="checkbox" id="download2">
-                                     <label for="download2">
-                                     </label>
-                                   </div>
-                                 </div>
-                               </td>
-                             <td>
-                               <a href="#"><i class="fas fa-file-download down-icon"></i> </a>
-                             </td>
-                             </tr>
-                           </tbody>
-                         </table>
+                                    <div class="col-md-12">
+
+                                      <input type="file" id="uploadFile" name="FileUpload" multiple="multiple" />
+                                      <div id="upload_prev"></div>
+                                      <input type="checkbox" id="clearOnDelete" class="hide" value=1 checked />
+
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <h5>Share Document</h5>
+                                      <div class="d-flex">
+                                        <p>Everyone</p>
+                                        <div class="form-group clearfix text-center ml-2 ">
+                                          <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="doc1" onchange="documentVal()" checked>
+                                            <label for="doc1">
+                                            </label>
+                                          </div>
+                                        </div>
+                                        <p>Individuals</p>
+                                        <div class="form-group clearfix text-center ml-2 ">
+                                          <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="doc2" onchange="documentVal()">
+                                            <label for="doc2">
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!--memberlist-->
+                                      <div class="memberlist">
+                                        <table class="table table-striped table-responsive-sm">
+
+                                          <thead class="thead-blue">
+                                            <th>Members</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th class="text-center"></th>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td><b>Mr Veerapa</b></td>
+                                              <td></td>
+                                              <td><b>- Chairman</b></td>
+                                              <td>
+                                                <div class="form-group clearfix text-center">
+                                                  <div class="icheck-primary d-inline">
+                                                    <input type="checkbox" id="checkboxPrimary1" checked>
+                                                    <label for="checkboxPrimary1">
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td><b>Mrs B Kissoon-Luckpuuttya</b></td>
+                                              <td></td>
+                                              <td><b>- Member</b></td>
+                                              <td>
+                                                <div class="form-group clearfix text-center">
+                                                  <div class="icheck-primary d-inline">
+                                                    <input type="checkbox" id="checkboxPrimary2">
+                                                    <label for="checkboxPrimary2">
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td><span><b>Mr N.Jowaheer</b> <b>Officer in charge</b></span></td>
+                                              <td></td>
+                                              <td><b>- In Attendance</b></td>
+                                              <td>
+                                                <div class="form-group clearfix text-center">
+                                                  <div class="icheck-primary d-inline">
+                                                    <!-- <div class="round"> -->
+                                                    <input type="checkbox" id="checkbox" />
+                                                    <label for="checkbox"></label>
+                                                    <!-- </div> -->
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--memberlist-->
+
+
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary">Save</button>
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <table class="table table-striped text-center table-responsive table-responsive-sm  mt-3">
+                            <thead class="thead-blue">
+                              <tr>
+                                <th>N0.</th>
+                                <th>Document Name</th>
+                                <th>View</th>
+                                <th>Download</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Example.docx</td>
+                                <td>
+                                  <div class="form-group clearfix">
+                                    <div class="form-group clearfix text-center">
+                                      <div class="icheck-primary d-inline">
+                                        <input type="checkbox" id="view1">
+                                        <label for="view1">
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                  <div class="form-group clearfix text-center">
+                                    <div class="icheck-primary d-inline">
+                                      <input type="checkbox" id="download1">
+                                      <label for="download1">
+                                      </label>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <a href="#"><i class="fas fa-file-download down-icon"></i> </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Example.docx</td>
+                                <td>
+                                  <div class="form-group clearfix">
+                                    <div class="form-group clearfix text-center">
+                                      <div class="icheck-primary d-inline">
+                                        <input type="checkbox" id="view2">
+                                        <label for="view2">
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </td>
+                                <td>
+                                  <div class="form-group clearfix text-center">
+                                    <div class="icheck-primary d-inline">
+                                      <input type="checkbox" id="download2">
+                                      <label for="download2">
+                                      </label>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td>
+                                  <a href="#"><i class="fas fa-file-download down-icon"></i> </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                         <!-- /.card-body -->
                       </div>
                       <!-- /.card -->
                     </div>
-                  
-                  </div><!--Documents-->
+
+                  </div>
+                  <!--Documents-->
 
                 </div>
               </div>

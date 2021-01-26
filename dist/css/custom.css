@@ -927,6 +927,13 @@ display: block;
 }
 
 
+.wrapper-decision {
+  /* border: 0.5px solid #002B3C; */
+  border-bottom: 4px solid #002B3C;
+}
+
+
+
 
 
 
@@ -935,6 +942,12 @@ display: block;
 /***/
 /*Media queries*/
 @media (max-width: 767px) and (min-width: 375px) {
+
+  
+
+.user_card {
+    width: 350px;
+}
 
   .topName {
     font-size: 0.9rem;
