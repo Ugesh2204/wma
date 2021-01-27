@@ -160,7 +160,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link text-center">
+      <a href="#" class="brand-link text-center">
         <img src="dist/img/wma.jpg" alt="AdminLTE Logo" class="brand-rederlogo">
       </a>
 
@@ -182,6 +182,20 @@
                 Document
               </a>
             </li>
+
+            <li class="nav-item">
+              <a href="Meeting.html" class="nav-link">
+                <i class="far fa-calendar"></i>
+                  Create Meetings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Subcommitee.html" class="nav-link">
+                <i class="far fa-clipboard"></i>
+                  Sub Committees
+              </a>
+            </li>
+  
             <li class="nav-item">
               <a href="Minutes.html" class="nav-link">
                 <i class="fas fa-sticky-note"></i>
@@ -200,21 +214,7 @@
                  List of Members
               </a>
             </li>
-  
-            <li class="nav-item">
-              <a href="Subcommitee.html" class="nav-link">
-                <i class="far fa-clipboard"></i>
-                  Sub Committees
-              </a>
-            </li>
-  
-            <li class="nav-item">
-              <a href="Meeting.html" class="nav-link">
-                <i class="far fa-calendar"></i>
-                  Create Meetings
-              </a>
-            </li>
-  
+
             <li class="nav-item">
               <a href="UserActivitylog.html" class="nav-link">
                 <i class="fas fa-user"></i>
@@ -244,11 +244,21 @@
             
               <div class="row">
                 <div class=" col-sm-12 col-md-12 col-lg-8 inner-content">
-
-
                   <div class="card ">
                     <div class="card-body">
-                     <table class="table table-striped text-center table-responsive-sm mt-3">
+                      <div class="searchbar">
+                        <form>
+                          <div class="row">
+                            <div class="col-md-8">
+                              <input type="search" placeholder="search" class="form-control innersearch">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary ">Search</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                     <table id="example3" class="table table-striped text-center table-responsive-sm mt-3">
                        <thead class="thead-blue">
                          <tr><th>N0.</th>
                          <th>Document Name</th>
@@ -283,10 +293,11 @@
                              </div>
                            </td>
                            <td>20/01/2021</td>
-                         <td>
-                           <a href="#"><i class="fas fa-file-download down-icon"></i> </a>
-                           <a href="#"><i class="fas fa-trash-alt down-icon"></i> </a>
-                         </td>
+                           <td>
+                            <a href="UpdateNewCommittee.html" class="btn btn-primary" data-toggle="tooltip" title="" data-original-title="Download File"><i class="fas fa-file-download"></i></a>
+                            <a href="#" class="btn btn-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="fas fa-trash-alt"></i></a>
+                          </td>
+                       
                          </tr>
                          <tr>
                            <td>2</td>
@@ -315,17 +326,15 @@
                            <td>
                              21/01/2021
                            </td>
-                         <td>
-                           <a href="#"><i class="fas fa-file-download down-icon"></i> </a>
-                         </td>
+                           <td>
+                            <a href="UpdateNewCommittee.html" class="btn btn-primary" data-toggle="tooltip" title="" data-original-title="Download File"><i class="fas fa-file-download"></i></a>
+                            <a href="#" class="btn btn-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="fas fa-trash-alt"></i></a>
+                          </td>
                          </tr>
                        </tbody>
                      </table>
                     </div>
                   </div>    
-
-
-              
                 </div><!-- End col-lg-8 inner-content-->
 
                 <div class=" col col-sm-12 col-md-12 col-lg-4">
@@ -546,6 +555,11 @@
   <script src="dist/js/pages/dashboard.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="dist/js/demo.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
 
   <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
   <script>tinymce.init({ selector: 'textarea' });</script>
@@ -554,6 +568,34 @@
   <script src="dist/js/customsNotif.js"></script>
   <script src="dist/js/uploadfile.js"></script>
 
+  
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+    $('#example3').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": true,
+      "responsive": true,
+    });
+  });
+</script>
 
 
 

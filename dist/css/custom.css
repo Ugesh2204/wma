@@ -855,7 +855,7 @@ display: block;
 
 
  .down-icon {
-   font-size: 2rem;
+   font-size: 1.5rem;
  }
  .smallthview {
    position: relative;
@@ -945,7 +945,7 @@ display: block;
 }
 
 
-}
+
 
 
 
@@ -953,8 +953,6 @@ display: block;
 /***/
 /*Media queries*/
 @media (max-width: 767px) and (min-width: 375px) {
-
-  
 
 .user_card {
     width: 350px;
@@ -996,7 +994,7 @@ display: block;
   }
 
   .notif-position {
-    right: -191px !important ;
+    right: -268px !important ;
   }
 
   .image-cell {
