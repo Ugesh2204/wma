@@ -40,6 +40,16 @@
     border-radius: 5px;
 
 }
+
+.login-inner {
+    width:330px; 
+}
+
+.login-box-msg {
+    color:#fff;
+}
+
+
 /* #B5D98D */
 .form-heading-text {
     font-size: 1.8rem;

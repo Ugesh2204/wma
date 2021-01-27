@@ -431,7 +431,7 @@
                         </table>
 
                         <!--Vote Result-->
-                        <table class="table">
+                        <table class="table table-responsive-sm">
                           <thead class="thead-blue">
                             <th>Members Vote result</th>
                             <th>Yes</th>
@@ -467,7 +467,7 @@
                           </div>
                         </div>
 
-                        <table class="table">
+                        <table class="table table-responsive-sm">
                           <thead class="thead-blue">
                             <th>Comments</th>
                             <th>Decision Taken</th>
@@ -742,62 +742,120 @@
                                       <h4 class="meeting-heading">Reschedule Meeting</h4>
                                     </div>
                                   </div>
-                                  <div class="row mb-2 mt-3">
-                                    <div class="col-md-12 text-center">
-                                      <h6 class="underline">248<span class="smallthview"> </span> <span
-                                          class="ml-3">STAFF COMMITTEE MEETING</span></h6>
-                                    </div>
-                                  </div>
-                                  <!-- <div class="row mt-1 text-center">
-                                    <div class="col-md-12 ">
-                                      <ul class="d-flex justify-content-center">
-                                        <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span class="info-minutes ml-2">Friday, January 22 2021</span></li>
-                                        <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span class="info-minutes ml-2">10:00am - 11:00 am</span> </li>
-                                        <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span class="info-minutes ml-2">Port Louis</span></li>
-                                      </ul>
-                                    </div>
-                                  </div> -->
-
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label class="mb-1">From</label>
-                                        <input type="date" class="form-control">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label class="mb-1">To</label>
-                                        <input type="date" class="form-control">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label class="mb-1">Location</label>
-                                        <input type="text" class="form-control">
-                                      </div>
-                                    </div>
-                                  </div>
 
 
-
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="form-group">
-                                        <label for="caption">Description</label>
-                                        <textarea class="form-control" name="description" id="" cols="30"
-                                          rows="10"></textarea>
+                                  <div class="container my-3">
+  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        
+                                     
+                                        
+                                        <!-- START TABS DIV -->
+                                        <div class="tabbable-responsive">
+                                          <div class="tabbable">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                              <li class="nav-item">
+                                                <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Reschedule</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Request Date</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="second" aria-selected="false">Request Dates</a>
+                                              </li>
+                                             
+                                            </ul>
+                                          </div>
+                                        </div>
                                       </div>
+                                      <div class="card-body">
+                                        
+                                        <div class="tab-content">
+                                          <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                                            <form>
+
+                                              <div class="row mb-2 mt-3">
+                                                <div class="col-md-12 text-center">
+                                                  <h6 class="underline">248<span class="smallthview"> </span> <span
+                                                      class="ml-3">STAFF COMMITTEE MEETING</span></h6>
+                                                </div>
+                                              </div>
+                                            
+                                              <div class="form-group ">
+                                                <label class="m-0">Date:</label>
+                                                <input type="date" class="form-control datetimepicker-input">
+                    
+                                                <label class="m-0">From:</label>
+                                                <input class=" form-control" type="time" name="from">
+                    
+                                                <label class="m-0">To:</label>
+                                                <input class=" form-control" type="time" name="to">
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div class="form-group">
+                                                    <label for="caption">Description</label>
+                                                    <textarea class="form-control" name="description" id="" cols="30"
+                                                      rows="10"></textarea>
+                                                  </div>
+                                                </div>
+                                              </div> 
+                                              <div class="row">
+                                                <div class="col-md-12 d-flex justify-content-end">
+                                                  <button type="button" class="btn btn-primary">Submit</button>
+                                                </div>
+                                              </div>
+                                             
+
+                                            </form>
+                                            
+          
+                                          </div>
+                                          <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                                            <div id="table-wrapper">
+                                              <div id="table-scroll">
+                                                <table class="table people-list table-bordered  mytable-responsive table-striped">
+                                                  <thead class="tableback">
+                                                    <th>Members</th>
+                                                    <th>Request Date</th>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                    <th>Actions</th>
+                                                  </thead>
+                                                  <tbody id="tbl" class="">
+                                                   <tr>
+                                                     <td>Mr Veerapa		- Chairman</td>
+                                                     <td>05.02.2021</td>
+                                                     <td>10:00 am</td>
+                                                     <td>11:00 am</td>
+                                                     <td>
+                                                      <a href="#" class="btn btn-primary" data-toggle="tooltip" title="" data-original-title="Edit"><i class="far fa-edit"></i></i></a>
+                                                      <a href="#" class="btn btn-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                                    </td>
+                                                   </tr>
+                                                
+                                                  </tbody>  
+                                                </table>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                                          </div>  
+                                       
+                                        </div>
+                                        <!-- END TABS DIV -->
+                                        
+                                      </div>
+                                      
                                     </div>
                                   </div>
+
+
 
                                 </div> <!-- End Modal body -->
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary">Reschedule</button>
+                                
                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                               </div> <!-- End Modal content-->

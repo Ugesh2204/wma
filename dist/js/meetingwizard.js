@@ -32,6 +32,12 @@ $(function(){
     $('.backward').click(function(){
         $("#wizard").steps('previous');
     })
+
+    $('[href="#finish"]').on("click",function() {
+        // $('#wizard').submit();
+        // alert("ok");
+        window.location.href='ViewMeeting.html';
+    })
     // // Date Picker
     // var dp1 = $('#dp1').datepicker().data('datepicker');
     // dp1.selectDate(new Date());
