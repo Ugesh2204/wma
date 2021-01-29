@@ -59,7 +59,7 @@
         icon: 'success',
         title: 'Member added Successfully',
         showConfirmButton: false,
-        timer: 15000
+        timer: 1500
       });
   }
   

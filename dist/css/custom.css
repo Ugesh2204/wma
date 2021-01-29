@@ -704,7 +704,7 @@ display: block;
   /*border:1px solid #000;*/
   background-color: var(--wmacolor);
   color:#fff;
-  width:100px;
+  width:151px;
   height:100px;
   padding: 0.2rem;
 }
@@ -1039,6 +1039,10 @@ display: block;
   .meeting-btns {
     justify-content: flex-start;
     margin-bottom: 2rem;
+  }
+
+  .big-eyes {
+    font-size: 1.5rem;
   }
 
 }
