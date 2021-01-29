@@ -25,7 +25,7 @@
         icon: 'success',
         title: 'Committee Created Successfully',
         showConfirmButton: false,
-        timer: 50000
+        timer: 2000
       });
   }
 

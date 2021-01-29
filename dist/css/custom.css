@@ -945,7 +945,10 @@ display: block;
 }
 
 
-
+.meeting-btns {
+ display: flex;
+ justify-content: flex-end;
+}
 
 
 
@@ -994,7 +997,7 @@ display: block;
   }
 
   .notif-position {
-    right: -268px !important ;
+    right: -206px !important ;
   }
 
   .image-cell {
@@ -1031,6 +1034,11 @@ display: block;
 
   .viewtext {
     display: none;
+  }
+
+  .meeting-btns {
+    justify-content: flex-start;
+    margin-bottom: 2rem;
   }
 
 }

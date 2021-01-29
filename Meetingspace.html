@@ -271,7 +271,7 @@
                 <div class=" col-sm-12 col-md-12 col-lg-8 inner-content">
                   <div class="card ">
                     <div class="card-body">
-                      <div class="d-flex justify-content-end">
+                      <div class="meeting-btns ">
                         <button class="btn btn-primary mr-1"><i class="fas fa-users"></i> Join Meeting</button>
                         <button class="btn btn-danger"><i class="far fa-clock"></i> End Meeting</button>
                       </div>
@@ -475,7 +475,7 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td> This is a decision taken for Item One</td>
+                              <td> Decision taken for Item One</td>
                               <td>Approve</td>
                               <td><button class="btn btn-primary"> <i class="far fa-edit"></i>Edit</button></td>
                             </tr>
@@ -584,7 +584,7 @@
                             </li>
                             <li>
                               <a href="#" class="btn btn-primary" data-toggle="modal" data-backdrop="static"
-                                data-keyboard="false" data-target="#myModal">
+                                data-keyboard="false" data-target="#">
                                 <i class="far fa-edit"></i>
                                 Edit minutes
                               </a>
@@ -830,8 +830,8 @@
                                                      <td>10:00 am</td>
                                                      <td>11:00 am</td>
                                                      <td>
-                                                      <a href="#" class="btn btn-primary" data-toggle="tooltip" title="" data-original-title="Edit"><i class="far fa-edit"></i></i></a>
-                                                      <a href="#" class="btn btn-danger" data-toggle="tooltip" title="" data-original-title="Delete"><i class="fas fa-trash-alt"></i></a>
+                                                      <a href="#" class="btn btn-primary mb-3" data-toggle="tooltip" title="" data-original-title="Edit"><i class="far fa-edit"></i></i></a>
+                                                      <a href="#" class="btn btn-danger mb-3" data-toggle="tooltip" title="" data-original-title="Delete"><i class="fas fa-trash-alt"></i></a>
                                                     </td>
                                                    </tr>
                                                 
@@ -841,6 +841,32 @@
                                             </div>
                                           </div>
                                           <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                                            <div id="table-wrapper">
+                                              <div id="table-scroll">
+                                                <table class="table people-list table-bordered  mytable-responsive table-striped">
+                                                  <thead class="tableback">
+                                                    <th>Members</th>
+                                                    <th>Request Date</th>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                  </thead>
+                                                  <tbody id="tbl" class="">
+                                                   <tr>
+                                                     <td>Mr Veerapa		- Chairman</td>
+                                                     <td>05.02.2021</td>
+                                                     <td>10:00 am</td>
+                                                     <td>11:00 am</td>
+                                                   </tr>
+                                                   <tr>
+                                                    <td>Mr S.Khuntoo</td>
+                                                    <td>08.02.2021</td>
+                                                    <td>10:00 am</td>
+                                                    <td>11:00 am</td>
+                                                
+                                                  </tbody>  
+                                                </table>
+                                              </div>
+                                            </div>
                                           </div>  
                                        
                                         </div>
