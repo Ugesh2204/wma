@@ -958,6 +958,17 @@ display: block;
   color: red;
 }
 
+.template li {
+  color:#212529;
+}
+
+.template li:nth-child(odd) {
+  background-color:#F2F2F2;
+}
+
+.template li:nth-child(even) {
+  background-color:#ffffff;
+
 
 /***/
 /*Media queries*/
