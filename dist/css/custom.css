@@ -968,8 +968,11 @@ display: block;
 
 .template li:nth-child(even) {
   background-color:#ffffff;
-
-
+}
+.sub-icon {
+  color:var(--wmacolor);
+  font-size: 1.2rem;
+}
 /***/
 /*Media queries*/
 @media (max-width: 767px) and (min-width: 375px) {

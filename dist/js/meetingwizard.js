@@ -20,7 +20,7 @@ $(function(){
             return true; 
         },
         labels: {
-            finish: "Submit",
+            finish: "Save",
             next: "Continue",
             previous: "Back"
         }
