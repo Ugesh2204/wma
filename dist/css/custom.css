@@ -52,6 +52,28 @@
 
 }
 
+
+
+[class*='sidebar-dark-'] .nav-sidebar > .nav-item.menu-open > .nav-link, [class*='sidebar-dark-'] .nav-sidebar > .nav-item:hover > .nav-link, [class*='sidebar-dark-'] .nav-sidebar > .nav-item > .nav-link:focus {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color: #fff;
+    background-color: var(--window);
+}
+
+[class*='sidebar-dark-'] .nav-treeview > .nav-item > .nav-link {
+  color:var(--window)!important;
+}
+
+[class*='sidebar-dark-'] .nav-treeview > .nav-item > .nav-link.active {
+  color:#fff!important;
+}
+
+
+
+
+
+
+
 .vote-tick {
   color:#70C908;
   font-size: larger;
@@ -700,24 +722,38 @@ display: block;
   display: flex;
 }
 
+
+
+
+
 .date-card {
-  /*border:1px solid #000;*/
+  /* border: 1px solid #000; */
   background-color: var(--wmacolor);
-  color:#fff;
-  width:151px;
-  height:100px;
-  padding: 0.2rem;
+  color: #fff;
+  width: 151px;
+  height: 140px;
+  padding: 0rem 0.2rem ;
+  display: flex-row;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .meetingtitle {
   font-weight: 600;
   color: var(--window);
 }
+
+.title-square {
+  font-size:1rem;
+ font-weight: 600;
+}
 .subtitlem {
   font-weight: 600;
 }
 .datesize {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font: weight 400;
 }
 

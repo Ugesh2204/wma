@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
   <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap4-toggle.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/main.css">
   <!-- overlayScrollbars -->
@@ -218,6 +219,18 @@
                List of Members
             </a>
           </li>
+          <li class="nav-item">
+            <a href="ListOfUsers.html" class="nav-link">
+              <i class="fas fa-user-friends"></i>
+               Prepare Board Decisions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="ListOfUsers.html" class="nav-link">
+              <i class="fas fa-user-friends"></i>
+               Prepare Matters Arising
+            </a>
+          </li>
 
           <li class="nav-item">
             <a href="UserActivitylog.html" class="nav-link">
@@ -225,6 +238,94 @@
                 User activity Log
             </a>
           </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cog"></i>
+              <p>
+                Parameters
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="VotingPoll.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Voting Poll</p> 
+                 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="Location.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Location</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+         
+
+
+          <!-- <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tree"></i>
+              <p>
+                UI Elements
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../UI/general.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>General</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/icons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Icons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/buttons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Buttons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/sliders.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sliders</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/modals.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Modals &amp; Alerts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/navbar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Navbar &amp; Tabs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Timeline</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/ribbons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ribbons</p>
+                </a>
+              </li>
+            </ul>
+          </li> -->
+         
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -247,21 +348,35 @@
             </div>
             <div class="card">
               <div class="card-body">
+
+                <div class="searchbar mb-3">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <input type="search" placeholder="search" class="form-control innersearch">
+                      </div>
+                      <div class="col-md-4">
+                          <button class="btn btn-primary ">Search</button>
+                      </div>
+                    </div>  
+                  </form>
+                </div>
+
                 <table>
                   <tr>
                     <div class="meetinglist">
                       <div class="date-card text-center">
-                        <div>Wednesday</div>
+                        <div class="title-square">Staff Committee</div>
                         <div class="cdate">
-                          <span class="datesize">19</span>
+                          <span class="datesize">246</span>
                         </div>
-                        <div class="cmonth">Jan 2021</div>
+                        <div class="cmonth"></div>
                       </div>
                       <div class="committee ml-3">
-                        <p class="innerdatecard"><a href="#" class="meetingtitle">Staff Committees</a></p>
-                        <p class="innerdatecard"><span class="subtitlem">Title : </span> Testing<p>
-                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 9.30 am - 12.30 pm</p>
-                        <p class="innerdatecard"><span class="subtitlem">Meeting number :</span> 243 <span class="badge-danger p-1">Pending</span></p>
+                        <p class="innerdatecard"><a href="#" class="meetingtitle"></a></p>
+                        <p class="innerdatecard"><span class="subtitlem">Date:</span> 21/02/2021</p>
+                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 9.30 am</p>
+                        <p class="innerdatecard"><span class="subtitlem">Status </span><span class="badge-danger p-1"> Pending</span></p>
                       </div>
                       <div class="viewmeeting col">
                         <a href="ViewMeeting.html">
@@ -276,17 +391,16 @@
                   <tr>
                     <div class="d-flex">
                       <div class="date-card text-center">
-                        <div>Friday</div>
+                        <div class="title-square">Board</div>
                         <div class="cdate">
-                          <span class="datesize">29</span>
+                          <span class="datesize">245</span>
                         </div>
-                        <div class="cmonth">Jan 2021</div>
+                        <div class="cmonth"></div>
                       </div>
                       <div class="committee ml-3">
-                        <p class="innerdatecard"><a href="#" class="meetingtitle">Board</a></p>
-                        <p class="innerdatecard"><span class="subtitlem">Title : </span> Testing<p>
-                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 1.30 pm - 15.00 pm</p>
-                        <p class="innerdatecard"><span class="subtitlem">Meeting number :</span> 244</p>
+                        <p class="innerdatecard"><span class="subtitlem">Date : </span>25/02/2021<p>
+                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 1.30 pm </p>
+                        <p class="innerdatecard"><span class="subtitlem">Status </span><span class="badge-success p-1"> Invitation sent</span></p>
                       </div>
                       <div class="viewmeeting col">
                         <a href="ViewMeeting.html">
@@ -301,17 +415,16 @@
                   <tr>
                     <div class="d-flex">
                       <div class="date-card text-center">
-                        <div>Monday</div>
+                        <div class="title-square">Audit and Risk Committee</div>
                         <div class="cdate">
-                          <span class="datesize">15</span>
+                          <span class="datesize">244</span>
                         </div>
-                        <div class="cmonth">Feb 2021</div>
+                        <div class="cmonth"></div>
                       </div>
                       <div class="committee ml-3">
-                        <p class="innerdatecard"><a href="#" class="meetingtitle">Audit and Risk Committee</a></p>
-                        <p class="innerdatecard"><span class="subtitlem">Title : </span> Testing<p>
-                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 10.00 am - 11.00 am</p>
-                        <p class="innerdatecard"><span class="subtitlem">Meeting number :</span> 245</p>
+                        <p class="innerdatecard"><span class="subtitlem">Date : </span>10/03/2021<p>
+                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 1.30 pm </p>
+                        <p class="innerdatecard"><span class="subtitlem">Status </span><span class="badge-success p-1"> Invitation sent</span></p>
                       </div>
                       <div class="viewmeeting col">
                         <a href="ViewMeeting.html">
@@ -326,17 +439,40 @@
                   <tr>
                     <div class="d-flex">
                       <div class="date-card text-center">
-                        <div>Thursday</div>
+                        <div class="title-square">Finance and Project Monitoring  Committee</div>
                         <div class="cdate">
-                          <span class="datesize">18</span>
+                          <span class="datesize">243</span>
                         </div>
-                        <div class="cmonth">Feb 2021</div>
+                        <div class="cmonth"></div>
                       </div>
                       <div class="committee ml-3">
-                        <p class="innerdatecard"><a href="#" class="meetingtitle">Finance and Project Monitoring  Committee</a></p>
-                        <p class="innerdatecard"><span class="subtitlem">Title : </span> Testing<p>
-                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 10.00 am - 11.00 am</p>
-                        <p class="innerdatecard"><span class="subtitlem">Meeting number :</span> 246</p>
+                        <p class="innerdatecard"><span class="subtitlem">Date : </span>10/03/2021<p>
+                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 1.30 pm </p>
+                        <p class="innerdatecard"><span class="subtitlem">Status </span><span class="badge-success p-1"> Invitation sent</span></p>
+                      </div>
+                      <div class="viewmeeting col">
+                        <a href="ViewMeeting.html">
+                          <span class="d-flex"><i class="fas fa-eye icon-eyes"></i>
+                            <span class="viewtext">View Meeting Details</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </tr>
+                  <hr>
+                  <tr>
+                    <div class="d-flex">
+                      <div class="date-card text-center">
+                        <div class="title-square">Corporate Governance Committee</div>
+                        <div class="cdate">
+                          <span class="datesize">242</span>
+                        </div>
+                        <div class="cmonth"></div>
+                      </div>
+                      <div class="committee ml-3">
+                        <p class="innerdatecard"><span class="subtitlem">Date : </span>10/03/2021<p>
+                        <p class="innerdatecard"><span class="subtitlem">Time:</span> 1.30 pm </p>
+                        <p class="innerdatecard"><span class="subtitlem">Status </span><span class="badge-success p-1"> Invitation sent</span></p>
                       </div>
                       <div class="viewmeeting col">
                         <a href="ViewMeeting.html">
@@ -433,6 +569,8 @@
 <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
+<script src="dist/js/pages/dashboard.js"></script>
+<script src="dist/js/bootstrap4-toggle.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->

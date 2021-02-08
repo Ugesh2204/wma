@@ -234,6 +234,18 @@
                  List of Members
               </a>
             </li>
+            <li class="nav-item">
+              <a href="ListOfUsers.html" class="nav-link">
+                <i class="fas fa-user-friends"></i>
+                 Prepare Board Decisions
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="ListOfUsers.html" class="nav-link">
+                <i class="fas fa-user-friends"></i>
+                 Prepare Matters Arising
+              </a>
+            </li>
 
             <li class="nav-item">
               <a href="UserActivitylog.html" class="nav-link">
@@ -241,6 +253,31 @@
                   User activity Log
               </a>
             </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="fas fa-cog"></i>
+                <p>
+                  Parameters
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Voting Poll</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add Location</p>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+           
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -293,29 +330,27 @@
                             <select class="typefocommittees form-control">
                               <option>Select a meeting</option>
                               <option>Finance and Project Monitoring Committee</option>
-                              <option>Staff Committees</option>
+                              <option>Staff Committee</option>
                               <option>Corporate Governance Committee</option>
                               <option>Audit and Risk Committee</option>
                               <option>Board Meeting</option>
                             </select>
                           </div>
                           <div class="form-group">
-                            <label class="mb-1">Meeting Title</label>
-                            <input type="text" class="form-control">
-                          </div>
-                          <div class="form-group">
                             <label class="mb-1">Location</label>
-                            <input type="text" class="form-control">
+                            <select class="typefocommittees form-control">
+                              <option> Board Room (Level 9) The Celicourt Anteleme Street Port Louis</option>
+                              <option>Board Room (Level 2) New Building Curepipe</option>
+                              <option>Work From Home</option>
+                            </select>
                           </div>
+                         
                           <div class="form-group ">
                             <label class="m-0">Date:</label>
                             <input type="date" class="form-control datetimepicker-input">
 
-                            <label class="m-0">From:</label>
+                            <label class="m-0">Time:</label>
                             <input class=" form-control" type="time" name="from">
-
-                            <label class="m-0">To:</label>
-                            <input class=" form-control" type="time" name="to">
                           </div>
                         </div>
                       </div>
