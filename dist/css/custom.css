@@ -51,6 +51,10 @@
 }
 
 
+.board a {
+  color: var(--window) !important;
+}
+
 .thead-vote {
   background-color: var(--wmacolor) !important;
 }

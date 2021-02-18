@@ -15,6 +15,25 @@ $('ul.nav-treeview a').filter(function() {
 }).parentsUntil(".nav-sidebar > .nav-treeview")
 .addClass('menu-open').prev('a').addClass('active');
 
+
+//hide and show item for board Meeting
+$(".slide-toggle").on("click","",function(){
+  $(".box-wrapper").slideToggle();
+ });
+
+
+
+ //switch on/Off
+
+ $("#myToggle").on("change",function(){
+   if(this.checked){
+     alert("Yes");
+   }
+   else {
+     alert("No");
+   }
+ });
+
 });
 
 

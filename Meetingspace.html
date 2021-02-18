@@ -467,123 +467,128 @@
                           </tbody>
                         </table>
 
-                        <!--Vote Result-->
-                        <table class="table table-responsive-sm">
-                          <thead class="thead-blue">
-                            <th>Members Vote result</th>
-                            <th>Yes</th>
-                            <th>No</th>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Mr Veerapa</td>
-                              <td><i class="fas fa-check-circle vote-tick"></i></td>
-                            </tr>
-                            <tr>
-                              <td>Mrs B Kissoon-Luckpuuttya</td>
-                              <td><i class="fas fa-check-circle vote-tick"></i></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Dr C. Bokhoree</td>
-                              <td></td>
-                              <td><i class="fas fa-check-circle vote-tick"></i></td>
-                            </tr>
-                            <tr>
-                              <td>Mr S.Khuntoo</td>
-                              <td></td>
-                              <td><i class="fas fa-check-circle vote-tick"></i></td>
-                            </tr>
-                          </tbody>
-                        </table><!-- End Vote Result-->
+                        <div class="vote-wrapper"><!--Start Voting Wrapper-->
+                                 <!--Vote Result-->
+                            <table class="table table-responsive-sm">
+                              <thead class="thead-blue">
+                                <th>Members Vote result</th>
+                                <th>Yes</th>
+                                <th>No</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Mr Veerapa</td>
+                                  <td><i class="fas fa-check-circle vote-tick"></i></td>
+                                </tr>
+                                <tr>
+                                  <td>Mrs B Kissoon-Luckpuuttya</td>
+                                  <td><i class="fas fa-check-circle vote-tick"></i></td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>Dr C. Bokhoree</td>
+                                  <td></td>
+                                  <td><i class="fas fa-check-circle vote-tick"></i></td>
+                                </tr>
+                                <tr>
+                                  <td>Mr S.Khuntoo</td>
+                                  <td></td>
+                                  <td><i class="fas fa-check-circle vote-tick"></i></td>
+                                </tr>
+                              </tbody>
+                            </table><!-- End Vote Result-->
 
-                        <div class="row">
-                          <div class="col-md-12 d-flex justify-content-end mb-2">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i
-                                class="fas fa-plus"></i> Comment</button>
-                          </div>
-                        </div>
-
-                        <table class="table table-responsive-sm">
-                          <thead class="thead-blue">
-                            <th>Comments</th>
-                            <th>Decision Taken</th>
-                            <th>Actions</th>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> Decision taken for Item One</td>
-                              <td>Approve</td>
-                              <td><button class="btn btn-primary"> <i class="far fa-edit"></i>Edit</button></td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <!-- Modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
-                          <div class="modal-dialog modal-lg">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-
-                              <div class="modal-body">
-                                <div class="row text-center">
-                                  <div class="col-md-12">
-                                    <h4 class="meeting-heading">Comment</h4>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-12">
-                                    <table class="table">
-                                      <thead class="thead-modal">
-                                        <th>Item</th>
-                                        <th class="text-center">Status</th>
-
-                                      </thead>
-                                      <tbody>
-                                        <td style="width:70%">1.Item Topic Example</td>
-                                        <td style="width:30%">
-                                          <div class="form-group clearfix text-center vote-inline ml-4 ">
-                                            <div class="icheck-primary mr-2">
-                                              <input type="radio" name="yes_no" id="m2">
-                                              <label for="m2">
-                                                Approve
-                                              </label>
-                                            </div>
-                                            <div class="icheck-primary vote-inline">
-                                              <input type="radio" name="yes_no" id="m21">
-                                              <label for="m21">
-                                                Reject
-                                              </label>
-                                            </div>
-                                          </div>
-                                        </td>
-
-                                      </tbody>
-                                    </table>
-
-
-                                    <div class="row">
-                                      <div class="col-md-12">
-                                        <div class="form-group">
-                                          <label for="caption">Description</label>
-                                          <textarea class="form-control" name="description" id="" cols="30"
-                                            rows="10"></textarea>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Save</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <div class="row">
+                              <div class="col-md-12 d-flex justify-content-end mb-2">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i
+                                    class="fas fa-plus"></i> Comment</button>
                               </div>
                             </div>
 
-                          </div>
-                        </div> <!-- End Modal -->
+                            <table class="table table-responsive-sm">
+                              <thead class="thead-blue">
+                                <th>Comments</th>
+                                <th>Decision Taken</th>
+                                <th>Actions</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td> Decision taken for Item One</td>
+                                  <td>Approve</td>
+                                  <td><button class="btn btn-primary"> <i class="far fa-edit"></i>Edit</button></td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                              <div class="modal-dialog modal-lg">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+
+                                  <div class="modal-body">
+                                    <div class="row text-center">
+                                      <div class="col-md-12">
+                                        <h4 class="meeting-heading">Comment</h4>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <table class="table">
+                                          <thead class="thead-modal">
+                                            <th>Item</th>
+                                            <th class="text-center">Status</th>
+
+                                          </thead>
+                                          <tbody>
+                                            <td style="width:70%">1.Item Topic Example</td>
+                                            <td style="width:30%">
+                                              <div class="form-group clearfix text-center vote-inline ml-4 ">
+                                                <div class="icheck-primary mr-2">
+                                                  <input type="radio" name="yes_no" id="m2">
+                                                  <label for="m2">
+                                                    Approve
+                                                  </label>
+                                                </div>
+                                                <div class="icheck-primary vote-inline">
+                                                  <input type="radio" name="yes_no" id="m21">
+                                                  <label for="m21">
+                                                    Reject
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </td>
+
+                                          </tbody>
+                                        </table>
+
+
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label for="caption">Description</label>
+                                              <textarea class="form-control" name="description" id="" cols="30"
+                                                rows="10"></textarea>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div> <!-- End Modal -->
+                        </div><!--End Voting Wrapper-->
+                 
+
+
                       </div>
 
                     </div>
