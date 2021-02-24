@@ -67,4 +67,16 @@ $("#items-wrapper li input").click(function() {
 });
 
 
+//highlight on check
+$("#board-wrapper li input").click(function() {
+  if ($(this).is(":checked")) {
+    $(this).parent().parent().parent().parent().addClass("highlight");
+  }
+
+  
+   else {
+    $(this).parent().parent().parent().parent().removeClass("highlight");
+  }
+});
+
 
