@@ -62,6 +62,15 @@
   color: var(--window) !important;
 }
 
+.board-sm h5 {
+ font-size:1.2rem;
+}
+
+.board-sm a h5{
+  font-size:1.2rem;
+  color:#333;
+}
+
 .thead-vote {
   background-color: var(--wmacolor) !important;
 }
@@ -1134,6 +1143,18 @@ display: block;
 
   .big-eyes {
     font-size: 1.5rem;
+  }
+
+  .board-sm a h5{
+    font-size:1rem;
+    color:#333;
+  }
+
+  .arrow-down {
+      background-color: #5CAC02;
+      padding: 0.1rem 0.2rem;
+      font-size: 1rem;
+      color: #fff;
   }
 
 }
