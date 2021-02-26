@@ -16,11 +16,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"> 
   <!-- Tempusdominus Bbootstrap 4 -->
   <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+
+  <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({selector:'textarea'});</script> -->
+
   <!-- iCheck -->
   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
   <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-  <link rel="stylesheet" href="dist/css/bootstrap4-toggle.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/main.css">
   <!-- overlayScrollbars -->
@@ -284,187 +287,262 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-11 col-sm-12 mx-auto whitebgbox">
-            
-            <h4 class="titleLv2">
-              List of  Locations
-            </h4>
-          
-            <div class=" col-sm-12 col-md-12 col-lg-12 inner-content">
-              
-             
-        
-              <table id="example3" class="table table-bordered table-striped table-hover" width="100%">
-                <thead class="tableback text-center">
-                <tr>
-                <th>No</th>
-                <td>Location</td>
-                <th>Action</th>
-                </tr>
-              </thead>
-                
-                <tbody class="text-center">
-                  <tr>
-                    <td>1</td>
-                    <td>Board Room (Level 9) The Celicourt Anteleme Street Port Louis</td>
-                    <td>
-                      <a href="" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal"><i class="far fa-edit"></i></a>     
-                      <a href="#" class="btn btn-danger"  data-toggle="tooltip" title="Delete"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                  </tr>
-              
-                  <tr>
-                    <td>2</td>
-                    <td>Board Room (Level 2) New WMA Building  street Curepipe</td>
-                    <td>
-                      <a href="" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal"><i class="far fa-edit"></i></a>     
-                      <a href="#" class="btn btn-danger"  data-toggle="tooltip" title="Delete"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>3</td>
-                    <td>Work from Home</td>
-                    <td>
-                      <a href="" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#myModal"><i class="far fa-edit"></i></a>     
-                      <a href="#" class="btn btn-danger"  data-toggle="tooltip" title="Delete"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-
-               <!-- Minutes Modal -->
-               <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                   <!-- Modal body -->
-                   
-                   <div class="modal-body">
-                    <div class="row text-center">
-                      <div class="col-md-12">
-                        <h4 class="meeting-heading">Meeting Minutes</h4>
+            <h3 class="titleLv2">Board decisions</h3>
+            <div class="row">
+              <div class=" col-sm-12 col-md-12 col-lg-12 inner-content">
+                <div class="searchbar">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <input  type="search" placeholder="search" class="form-control innersearch">
+                      </div>
+                      <div class="col-md-4">
+                          <button class="btn btn-primary ">Search</button>
                       </div>
                     </div>
-                    <div class="row mb-2 mt-3">
-                      <div class="col-md-12 text-center">
-                        <h6 class="underline">40<span class="smallthview"> </span> <span class="ml-3">STAFF COMMITTEE MEETING</span></h6>
+                  </form>
+                </div>
 
-                      </div>
-                    </div>
-                    
-                    <div class="row mt-3 mb-2">
-                      <div class="col-md-12">
-                        <ul>
-                          <li class="mt-2"><i class="far fa-calendar-alt icon-general ml-2"></i><span class="info-meeeting ml-2">Friday, January 22 2021</span></li>
-                          <li class="mt-2"><i class="far fa-clock icon-general ml-2"></i><span class="info-meeeting ml-2">10:00am - 11:00 am</span> </li>
-                          <li class="mt-2"><i class="fas fa-map-marker-alt icon-general ml-2"></i><span class="info-meeeting ml-2"> Board Room of WMA, Level 9, Celicourt Building Port Louis</span></li>
-                        </ul>
-                      </div>
-                    
-                    </div>
-                     
-                    <div class="row mt-2">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                 
-                          <div class="memberlists">
-                            <table class="table table-striped table-responsive-sm">
-
-                              <thead class="thead-blue">
-                                <tr><th>Present</th>
-                                <th></th>
-                                <th></th>
-                               
-                              </tr></thead>
-                              <tbody>
-                                <tr>
-                                  <td><b>Mr Veerapa</b></td>
-                                  <td></td>
-                                  <td><b>- Chairman</b></td>
-                                </tr>
-                                <tr>
-                                  <td><b>Mrs B Kissoon-Luckpuuttya</b></td>
-                                  <td></td>
-                                  <td><b>- Member</b></td>
-                                </tr>
-                                <tr>
-                                  <td><b>Dr C. Bokhoree</b></td>
-                                  <td></td>
-                                  <td><b>- Member</b></td>
-                                </tr>
-                                <tr>
-                                  <td><b>Mr S.Khuntoo</b></td>
-                                  <td></td>
-                                  <td><b>- Member</b></td>
-                                </tr>
-                                <tr>
-                                  <td><span><b>Mr N.Jowaheer,</b> <b>Officer in charge</b></span></td>
-                                  <td></td>
-                                  <td><b>- In Attendance</b></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                <div class="table-matter-wrapper mt-3">
+                  <table class="table table-bordered table-striped table-responsive-lg table-responsive-sm">
+                    <div class="row mb-3">
+                      <div class="col-md-12 d-flex  align-items-center">
+                        <h5>99 th Board Meeting  29/01/2021</h5>
+                        <div class="row">
+                          <div class="col-md-12 d-flex align-items-center ml-5">
+                            <button type="button" class="btn btn-primary">Generate Pdf <i class="fas fa-file-pdf down-icon"></i> </button>
                           </div>
-                          
+                         
                         </div>
-                      </div>
-                    </div>
-            
-                    <hr>
-                    <div class="row">
-                      
-                      <div class="col-md-12">
-                        <!-- <div class="d-flex justify-content-end mb-1">
-                          <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i> Add Item</a>
-                        </div> -->
-                        <div class="form-group">
-                          <label class="mb-1">The Staff Commitee met with the following agenda :</label>
-                          <ol>
-                            <li class="mb-1"><h6>Topic 1</h6></li>
-                            <li class="mb-1"><h6>Topic 2</h6></li>
-                            <li class="mb-1"><h6>Topic 3</h6></li>
-                          </ol>
                         
-                        </div>
                       </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="mb-1">Opening of meeting</label>
-                          <h6 class="mb-3"> The Chairman opened the meeting and welcom all the members present.</h6>
-                          <textarea class="form-control" name="description" id="" cols="30"
-                                          rows="10" placeholder=" 1. Staff commitee -Item 1"></textarea>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="mb-1">End of meeting</label>
-                          <h6>The Commitee ended at <b>11.00 hr</b>  <i class="far fa-clock icon-general ml-2"></i></h6> 
-                        </div>
-                      </div>
-                    </div>
-                   
-                  </div>
-                   <!-- End Modal body -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Update</button>
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div> <!-- End Modal content-->
+                 
+                    <thead class="tableback text-center">
+                      <th style="width:100px">Item No</th>
+                      <th>Decisions</th>
+                      <!-- <th>Implementation/Follow Up/Progress</th> -->
+                      <th>Status</th>
+                      <th>Action</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <h5>Item 1</h5>
+                          <div class="inner-comment-wrapper">
+                            <p class="p-2">
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+  
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          In Progress
+                        </td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Comment</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>
+                          <h5>Item 2</h5>
+                          <div class="inner-comment-wrapper">
+                            <p class="p-2">
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+  
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          In Progress
+                        </td>
+                        <td>
+                          <button class="btn btn-primary">Add Comment</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
 
                 </div>
-                </div> <!-- End Minutes Modal -->
+                <div class="table-matter-wrapper mt-3">
+                  <table class="table table-bordered table-striped table-responsive-lg table-responsive-sm">
+                    <div class="row mb-3">
+                      <div class="col-md-12 d-flex  align-items-center">
+                        <h5>98 th Board Meeting  20/12/2020</h5>
+                        <div class="row">
+                          <div class="col-md-12 d-flex align-items-center ml-5">
+                            <button type="button" class="btn btn-primary">Generate Pdf <i class="fas fa-file-pdf down-icon"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <thead class="tableback text-center">
+                      <th style="width:100px">Item No</th>
+                      <th>Decisions</th>
+                      <!-- <th>Implementation/Follow Up/Progress</th> -->
+                      <th>Status</th>
+                      <th>Action</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <h5>Item 1</h5>
+                          <div class="inner-comment-wrapper">
+                            <p class="p-2">
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+  
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          Follow Up
+                        </td>
+                        <td>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Comment</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>
+                          <h5>Item 2</h5>
+                          <div class="inner-comment-wrapper">
+                            <p class="p-2">
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+                              The Board notes that the
+  
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          In Progress
+                        </td>
+                        <td>
+                          <button class="btn btn-primary">Add Comment</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+                </div>
 
-            </div><!--End Inner-content-->
+
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">99th Board Meeting </h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                         <form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" value="Item 1">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="caption">Decisions</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="caption">Status</label>
+                            <select class="form-control">
+                              <option>Select</option>
+                              <option>Implementation</option>
+                              <option>Follow Up</option>
+                              <option>Progress</option>
+                            </select>
+                          </div>
+                         </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" >Save</button>
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+              
+                <nav aria-label="..." class="top-pagination">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active">
+                      <span class="page-link">
+                        2
+                        <span class="sr-only">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>  
+              </div>
             
-            
+            </div>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -478,6 +556,7 @@
     </div>
   </footer>
 
+
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -490,9 +569,8 @@
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script> 
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script> 
+<script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
@@ -522,17 +600,29 @@
 <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
-<script src="dist/js/pages/dashboard.js"></script>
-<script src="dist/js/bootstrap4-toggle.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
+
+<!-- javascript -->
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({ selector: 'textarea' });</script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
 <!-- page script -->
 <script src="dist/js/custom.js"></script>
 
 
+<script>
+function myFunction(){
+  var input = document.getElementById("mySelect").value ;
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(input.length >=2 && input.length <=2 && input== 00 && keycode == 13){
+    $("#rechercheClient").modal('show');
+  }
+}
 
+</script>
 
 
 <script>

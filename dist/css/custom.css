@@ -948,23 +948,23 @@ display: block;
   top:-22px;
 }
 /*Round check box*/
-/* .round {
+.round {
   position: relative;
 }
 
 .round label {
-  background-color: #fff;
+  background-color: #ccc;
   border: 1px solid #ccc;
   border-radius: 50%;
   cursor: pointer;
-  height: 28px;
-  left: 66px;
+  height: 17px;
+  left: -6px;
   position: absolute;
-  top: 0;
-  width: 28px;
+  top: 5px;
+  width: 17px;
 }
 
-.round label:after {
+/* .round label:after {
   border: 2px solid #fff;
   border-top: none;
   border-right: none;
@@ -976,7 +976,7 @@ display: block;
   top: 8px;
   transform: rotate(-45deg);
   width: 12px;
-}
+} */
 
 .round input[type="checkbox"] {
   visibility: hidden;
@@ -989,7 +989,7 @@ display: block;
 
 .round input[type="checkbox"]:checked + label:after {
   opacity: 1;
-} */
+}
 
 /**/
 
