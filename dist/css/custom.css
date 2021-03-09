@@ -181,6 +181,23 @@ a {
   color: #D8000C;
   background-color:#FFFCED;
 }
+
+.pdfbtn {
+  background-color: #28A745 !important;
+  border: 0;
+}
+
+.pdfbtn:hover {
+  background-color: #002B3C !important;
+  border: 0;
+}
+
+.formline {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
+}
 /**/
 
 .underline {
