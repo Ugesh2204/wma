@@ -22,7 +22,11 @@ $(document).ready(function(readyEvent) {
     }
     var files = changeEvent.target.files;
     for (var i = 0; i < files.length; i++) {
-      $("#upload_prev").append('<span>' + '<div class="filenameupload" id="file_'+i+'">' + files[i].name + '</div>' + ' <i class="fa fa-times  close" style="font-size: 1.18em;color:red;" aria-hidden="true"></i></span>');
+      $("#upload_prev").append(
+        `<span>  
+        <div class="filenameupload" id="file_'+i+'">' + files[i].name + '</div>' + '
+         <i class="fa fa-times  close" style="font-size: 1.18em;color:red;" aria-hidden="true"></i></span>`
+         );
     }
   });
 });
@@ -32,14 +36,34 @@ $(document).ready(function(readyEvent) {
 
 
 
+
 //Testing
 
 $(document).ready(function(){
-        $('input[type="file"]').change(function(e){
-            var fileName = e.target.files[0].name;
-            alert('The file "' + fileName +  '" has been selected.');
-        });
-    });
+ //let inputField = "staffcommitee";
+//  let inputField = document.getElementById("test").value;
+
+//         $('input[type="file"]').change(function(e){
+//             var fileName = e.target.files;
+//             // alert('The file "' + fileName +  '" has been selected.');
+//             for(let i = 0; i<fileName.length; i++){
+//               //will remove extention
+//               let filecontainer = fileName[i].name.split('.').slice(0, -1).join('.');
+//             //console.log(filecontainer);
+//              if(inputField == filecontainer) {
+//                //console.log("ok");
+//                $("#allfiles").append(`
+               
+//                 <p>${fileName[i].name}<p/>
+//                `
+//                )
+//              }
+//              else {
+//                console.log("pabon");
+//              }
+//             }
+//         });
+});
 
 
 

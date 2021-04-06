@@ -448,12 +448,20 @@
                         
                             </div>
 
+                            
+                            <div class="row">
+                              <div class="col-md-12">
+                                <input type="text" id="test">
+                                <div id="allfiles">
 
+                                </div>
+                              </div>
+                            </div>
 
-                            <!-- <form>
-                              <input type="file">
+                            <form>
+                              <input type="file"  multiple="multiple" />
                               <p><strong>Note:</strong> Choose any file on your computer and its name will be displayed in an alert dialog box.</p>
-                          </form> -->
+                          </form>
 
                           </div>
                         </div>
@@ -474,6 +482,8 @@
                             <div class="card-body">
                               <div class="row text-right">
                                 <div class="col-md-12">
+                                    <input type="file"  multiple="multiple"  onclick="uploaddocs()"/>
+                                    <!-- <a href="#" type="file" class="btn btn-success add-field" onclick="uploaddocs()" ><i class="fas fa-plus"></i> Upload Documents</a> -->
                                   <!-- onclick="addtempfield()" -->
                                   <a href="#" class="btn btn-primary add-field" onclick="addtempfield()" ><i class="fas fa-plus"></i> Add Item</a>
                                 </div>

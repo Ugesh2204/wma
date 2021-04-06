@@ -6,7 +6,7 @@ function addtempfield(){
          ` 
          <li>
             <div class="form-group mt-2 d-flex align-items-center">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="item">
                 <i class="fas fa-times ml-2 delete-input remove_field"></i> 
             </div>
 
@@ -91,10 +91,33 @@ $(document).on("click", ".add-more", function(e){ //on add input button click
     });
 
 
+function uploaddocs(){
 
-    //  $(document).on('click', '#upload_prev', function(e) {
-    //     alert("ok");
-    //  });
-    
-     
+    let inputval = [];
+    $(".agenda-wrapper li").each(function()   {
+    if($('div',this).length>0){
+        var $div = $('div',this);
+        inputval.push({
+            input: $div.eq(0).find('input').val()
+        });
+    }
+    });
+    console.log(inputval);
+
+
+    $('input[type="file"]').change(function(e){
+        let fileName = e.target.files;
+        // alert('The file "' + fileName +  '" has been selected.');
+        for(let i = 0; i<fileName.length; i++){
+            //will remove extention
+            let filecontainer = fileName[i].name.split('.').slice(0, -1).join('.');
+            //console.log(filecontainer);
+            for(let j = 0; j < inputval.length; j++){
+                console.log(inputval[i]);
+            }
+        }
+    });
+
+
+}
       
