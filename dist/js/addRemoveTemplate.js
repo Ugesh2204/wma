@@ -113,13 +113,32 @@ function uploaddocs(){
      for(var i = 0; i<tab.length; i++){
          var getInputvalue = (items[i].value);
          console.log( tab.indexOf(getInputvalue));
+
+         for(let j = 0; j < storeDoc.length; j++){
+            var doc = storeDoc[j].filesplit.split('_').slice(0,3).join('_');
+            
+            if(getInputvalue == doc){
+                console.log("ok true");
+                //i want the index value of input 
+                var positionvalue = tab.indexOf(getInputvalue);
+                $(".agenda-wrapper li div").eq(positionvalue).after(
+                    `<div class="row">${storeDoc[j].filesplit}</div>`
+                    
+                    );
+            } else {
+                console.log("false nah");
+            }
+    
+         }
      }
 
-     var getindexvalue = tab.indexOf(getInputvalue);
+    
+
+     //var getindexvalue = tab.indexOf("ddd");
      //  console.log(getindexvalue);
  
       //add to html
-      $(".agenda-wrapper li div").eq(getindexvalue).after('<div class="row">Brown Cow</div>');
+      //$(".agenda-wrapper li div").eq(getindexvalue).after('<div class="row">Brown Cow</div>');
 
 
      
