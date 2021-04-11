@@ -5,24 +5,12 @@ function addtempfield(){
     $(".agenda-wrapper").append(
          ` 
          <li>
-            <div class="form-group mt-2 d-flex align-items-center">
-                <input type="text" class="form-control" id="item">
+            <div class="form-group mt-2 d-flex align-items-center" id="me">
+                <input type="text" class="form-control" id="item1">
                 <i class="fas fa-times ml-2 delete-input remove_field"></i> 
             </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <input type="file" id="uploadFile" name="FileUpload" multiple="multiple" />
-                    <div class="upload_list""></div>
-                   
-                </div>
-            </div>
-                              
-            
-            <ol class="wrapper-sub">
-                <i class="fas fa-plus-circle add-more sub-icon"></i>
-            
-            </ol>
+           
+          
                 
         </li>
         `
@@ -93,31 +81,100 @@ $(document).on("click", ".add-more", function(e){ //on add input button click
 
 function uploaddocs(){
 
-    let inputval = [];
-    $(".agenda-wrapper li").each(function()   {
-    if($('div',this).length>0){
-        var $div = $('div',this);
-        inputval.push({
-            input: $div.eq(0).find('input').val()
-        });
-    }
-    });
-    console.log(inputval);
+    $('#uploadFile1').change(function(e){
+
+         //Get all docs in an Array
+         let storeDoc = [];
+         let fileName = e.target.files;
+         for(let i = 0; i<fileName.length; i++){
+             //let filecontainer = fileName[i].name.split('_').slice(0,3).join('_');
+             let filesplit = fileName[i].name;
+             //let filesplit = fileName[i].name;
+             storeDoc.push({filesplit});
+         }
+ 
+         console.log(storeDoc);
 
 
-    $('input[type="file"]').change(function(e){
-        let fileName = e.target.files;
-        // alert('The file "' + fileName +  '" has been selected.');
-        for(let i = 0; i<fileName.length; i++){
-            //will remove extention
-            let filecontainer = fileName[i].name.split('.').slice(0, -1).join('.');
-            //console.log(filecontainer);
-            for(let j = 0; j < inputval.length; j++){
-                console.log(inputval[i]);
-            }
+
+
+
+        var items = document.querySelectorAll(".agenda-wrapper li div input");
+        //tab contain all input value 0 1 2 3 4 ...
+        tab= [];
+
+        for(var i = 0; i<items.length; i++){
+            tab.push(items[i].value);
         }
+
+      console.log(tab);
+     //Neew to place value from input
+
+     for(var i = 0; i<tab.length; i++){
+         var getInputvalue = (items[i].value);
+         console.log( tab.indexOf(getInputvalue));
+     }
+
+     var getindexvalue = tab.indexOf(getInputvalue);
+     //  console.log(getindexvalue);
+ 
+      //add to html
+      $(".agenda-wrapper li div").eq(getindexvalue).after('<div class="row">Brown Cow</div>');
+
+
+     
+
+
+
+ 
+
+    
+   
+
+     
+
+
+    
+
+        // var element = document.getElementsByName("filter[]");
+        
+
+        // for (var i = 0; i < element.length; i++){
+        //    //console.log(els[i].value.split(' ').slice(0, 3).join('_'));
+        //    for(let x = 0; x < storeDoc.length; x++){
+        //     //console.log(storeDoc[x].filesplit);
+        //      if(element[i].value.split(' ').slice(0, 3).join('_') == storeDoc[x].filesplit.split('_').slice(0,3).join('_')){
+                
+        //         element.find('#me').append("some value");
+        //      // $(".listdoc").append(`<p>${storeDoc[x].filesplit}<p>`);
+
+        //     }
+        //    }
+        // }
+        
+
+     
+
+        // //Get input value in an Array
+        // let inputval = [];
+       
+        // $(".agenda-wrapper li").each(function()   {
+        //     if($('div',this).length>0){
+        //         var $div = $('div',this);
+        //         let inputdata = $div.eq(0).find('input').val().split(' ').slice(0, 3).join('_');
+        //         inputval.push({inputdata});
+        //        // console.log(inputdata); 
+               
+        //     }
+        // });
+        // console.log(inputval);
+
+
     });
+
+   
+   
 
 
 }
-      
+
