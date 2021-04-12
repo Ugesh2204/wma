@@ -1048,6 +1048,14 @@ display: block;
 }
 
 
+.doc-container {
+  width: 100%;
+}
+
+.pushleft {
+  margin-left: 0.96rem;
+}
+
 .addtemp {
   color:#333;
 }

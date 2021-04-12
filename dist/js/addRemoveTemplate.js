@@ -5,9 +5,11 @@ function addtempfield(){
     $(".agenda-wrapper").append(
          ` 
          <li>
-            <div class="form-group mt-2 d-flex align-items-center" id="me">
-                <input type="text" class="form-control" id="item1">
-                <i class="fas fa-times ml-2 delete-input remove_field"></i> 
+            <div class="form-group mt-2 d-flex" id="me">
+               <div class="doc-container ">
+                    <input type="text" class="form-control mb-3" id="item1">
+                </div>
+                <i class="fas fa-times ml-2 mt-2 delete-input remove_field"></i> 
             </div>
            
           
@@ -83,8 +85,9 @@ function uploaddocs(){
 
     $('#uploadFile1').change(function(e){
 
-         //Get all docs in an Array
+         //Store all docs in an Array
          let storeDoc = [];
+
          let fileName = e.target.files;
          for(let i = 0; i<fileName.length; i++){
              //let filecontainer = fileName[i].name.split('_').slice(0,3).join('_');
@@ -95,41 +98,51 @@ function uploaddocs(){
  
          console.log(storeDoc);
 
-
-
-
-
         var items = document.querySelectorAll(".agenda-wrapper li div input");
-        //tab contain all input value 0 1 2 3 4 ...
+        //tab contain all input value 0 1 2 3 4 ..
         tab= [];
 
         for(var i = 0; i<items.length; i++){
+
             tab.push(items[i].value);
         }
 
       console.log(tab);
      //Neew to place value from input
 
+
+
      for(var i = 0; i<tab.length; i++){
          var getInputvalue = (items[i].value);
-         console.log( tab.indexOf(getInputvalue));
+         var positionvalue = tab.indexOf(getInputvalue);
+         console.log(getInputvalue);
+         console.log( positionvalue);
 
          for(let j = 0; j < storeDoc.length; j++){
             var doc = storeDoc[j].filesplit.split('_').slice(0,3).join('_');
             
+  
+            var newv = tab.indexOf(getInputvalue);
+            console.log(newv);
+
+
             if(getInputvalue == doc){
-                console.log("ok true");
-                //i want the index value of input 
-                var positionvalue = tab.indexOf(getInputvalue);
-                $(".agenda-wrapper li div").eq(positionvalue).after(
-                    `<div class="row">${storeDoc[j].filesplit}</div>`
+               
+                $(".agenda-wrapper li div input").eq(positionvalue).after(
+                    `<div class="row pushleft">
+                   
+                        <span> ${storeDoc[j].filesplit}<i class="fas fa-trash-alt down-icon  close" 
+                        style="font-size: 1em;color:red;margin-top:5px; padding-left:0.5rem"
+                        aria-hidden="true"></i></span>
+                    </div>`
                     
-                    );
-            } else {
-                console.log("false nah");
-            }
+                );
+             
+            } 
     
          }
+
+         //break;
      }
 
     
