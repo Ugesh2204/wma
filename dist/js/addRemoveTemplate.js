@@ -54,9 +54,6 @@ $(document).on("click", ".add-more", function(e){ //on add input button click
 
 
 
-
-
-
     $(document).on("change", "#uploadFile", function(e){ //on add input button click
         e.preventDefault();
         var filename = this.value;
@@ -83,6 +80,8 @@ $(document).on("click", ".add-more", function(e){ //on add input button click
 
 function uploaddocs(){
 
+        //$(".agenda-wrapper li div .upload-item").remove();
+
     $('#uploadFile1').change(function(e){
 
          //Store all docs in an Array
@@ -99,114 +98,46 @@ function uploaddocs(){
          console.log(storeDoc);
 
         var items = document.querySelectorAll(".agenda-wrapper li div input");
-        //tab contain all input value 0 1 2 3 4 ..
-        tab= [];
+        //tab contain all input values
+        inputVal= [];
 
         for(var i = 0; i<items.length; i++){
-
-            tab.push(items[i].value);
+            inputVal.push(items[i].value);
         }
 
-      console.log(tab);
-     //Neew to place value from input
+        console.log(inputVal);
+        //Neew to place value from input
 
 
 
-     for(var i = 0; i<tab.length; i++){
-         var getInputvalue = (items[i].value);
-         var positionvalue = tab.indexOf(getInputvalue);
-         console.log(getInputvalue);
-         console.log( positionvalue);
-
-         for(let j = 0; j < storeDoc.length; j++){
-            var doc = storeDoc[j].filesplit.split('_').slice(0,3).join('_');
+        for(var i = 0; i<inputVal.length; i++){
+            var getInputvalue = (items[i].value);
+            var positionvalue = inputVal.indexOf(getInputvalue);
             
-  
-            var newv = tab.indexOf(getInputvalue);
-            console.log(newv);
-
-
-            if(getInputvalue == doc){
-               
-                $(".agenda-wrapper li div input").eq(positionvalue).after(
-                    `<div class="row pushleft">
-                   
-                        <span> ${storeDoc[j].filesplit}<i class="fas fa-trash-alt down-icon  close" 
-                        style="font-size: 1em;color:red;margin-top:5px; padding-left:0.5rem"
-                        aria-hidden="true"></i></span>
-                    </div>`
-                    
-                );
-             
-            } 
-    
-         }
-
-         //break;
-     }
-
-    
-
-     //var getindexvalue = tab.indexOf("ddd");
-     //  console.log(getindexvalue);
- 
-      //add to html
-      //$(".agenda-wrapper li div").eq(getindexvalue).after('<div class="row">Brown Cow</div>');
-
-
-     
-
-
-
- 
-
-    
-   
-
-     
-
-
-    
-
-        // var element = document.getElementsByName("filter[]");
+            for(let j = 0; j < storeDoc.length; j++){
+                var doc = storeDoc[j].filesplit.split('_').slice(0,3).join('_');
+            
+                if(getInputvalue == doc){
+                    $(".agenda-wrapper li div input").eq(positionvalue).after(
+                        `<div class="row pushleft upload-item">
+                            <span class="inner-doc"> ${
+                                storeDoc[j].filesplit
+                            }<i class="fas fa-trash-alt down-icon  close" style="font-size: 1em;color:red;margin-top:5px; padding-left:0.5rem"
+                            aria-hidden="true"></i></span>
+                        </div>`
+                        
+                    );
+                } 
         
-
-        // for (var i = 0; i < element.length; i++){
-        //    //console.log(els[i].value.split(' ').slice(0, 3).join('_'));
-        //    for(let x = 0; x < storeDoc.length; x++){
-        //     //console.log(storeDoc[x].filesplit);
-        //      if(element[i].value.split(' ').slice(0, 3).join('_') == storeDoc[x].filesplit.split('_').slice(0,3).join('_')){
-                
-        //         element.find('#me').append("some value");
-        //      // $(".listdoc").append(`<p>${storeDoc[x].filesplit}<p>`);
-
-        //     }
-        //    }
-        // }
-        
-
-     
-
-        // //Get input value in an Array
-        // let inputval = [];
-       
-        // $(".agenda-wrapper li").each(function()   {
-        //     if($('div',this).length>0){
-        //         var $div = $('div',this);
-        //         let inputdata = $div.eq(0).find('input').val().split(' ').slice(0, 3).join('_');
-        //         inputval.push({inputdata});
-        //        // console.log(inputdata); 
                
-        //     }
-        // });
-        // console.log(inputval);
-
+            }
+        }
 
     });
 
+  
    
-   
-
+    //$(".agenda-wrapper li div .upload-item").remove();
 
 }
 

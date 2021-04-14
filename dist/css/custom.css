@@ -113,8 +113,23 @@
 }
 
 
+/*New css added*/
+.temp-right {
+  padding-right: 1.2rem;
+  padding-left: 0.1rem;
+}
 
+.wmatext-align {
+  text-align: right !important;
+}
 
+.pushbtn {
+  margin-right: 1.2rem;
+}
+
+.uploadsize {
+  font-weight: 300 !important;
+}
 
 
 
@@ -1082,6 +1097,10 @@ display: block;
 /*Media queries*/
 @media (max-width: 767px) and (min-width: 375px) {
 
+  .wmatext-align {
+    text-align: center !important;
+  }
+   
 .user_card {
     width: 350px;
 }

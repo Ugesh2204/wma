@@ -574,119 +574,236 @@
                                   <div class="modal-body">
                                     <div class="row text-center">
                                       <div class="col-md-12">
-                                        <h4 class="meeting-heading">Committee Meeting Agenda Template</h4>
+                                        <h4 class="meeting-heading">Staff Committee Meeting Agenda Template</h4>
                                       </div>
                                     </div>
-                                    <ol class="col-md-12 pl-4 pr-4">
+                                    <div class="row wmatext-align mt-2">
+                                      <div class="col-md-12">
+                                          <!-- <input type="file" multiple="multiple" id="uploadFile1" onclick="uploaddocs()"> -->
+                                          <input type="file" id="actual-btn" hidden/>
+                                              <!-- our custom upload button -->
+                                              <label for="actual-btn" class="btn btn-success mb-0 uploadsize">Upload files</label>
+                                              <!-- name of file chosen -->
+                                              <!-- <span id="file-chosen">No file chosen</span> -->
+
+                                        <a href="#" class="btn btn-primary add-field pushbtn" onclick="addtempfield()"><i class="fas fa-plus"></i> Add Item</a>
+                                      </div>
+                                    </div>
+                                    <ol class="col-md-12 pl-3 pr-0">
                                       
                                       <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>Agenda Item One Example</p>
-                                          </div>
-                                        
+                                        <div class="form-group mt-2 d-flex align-items-center">
+                                          <input type="text" class="form-control" value="SC Agenda Item A">
+                                          <i class="fas fa-times ml-2 delete-input remove_field"></i> 
                                         </div>
-                                        <div class="row">
+                                        <div class="row temp-right">
                                           <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agenda_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
+                                            <div class=" table-responsive table-responsive-md table-responsive-sm">
+                                                <table class="table table-striped text-center ">
+                                                    <thead class="thead-blue">
+                                                      <tr><th>N0.</th>
+                                                      <th>Document</th>
+                                                      <th>View</th>
+                                                      <th>Download</th>
+                                                      <th>Action</th>
+                                                    </tr></thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <td>SC_Agenda_Item_A_01.docx</td>
+                                                        <td> 
+                                                          <div class="form-group clearfix">
+                                                            <div class="form-group clearfix text-center">
+                                                              <div class="icheck-primary d-inline">
+                                                                <input type="checkbox" id="view1">
+                                                                <label for="view1">
+                                                                </label>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          
+                                                        </td>
+                                                        <td>
+                                                          <div class="form-group clearfix text-center">
+                                                            <div class="icheck-primary d-inline">
+                                                              <input type="checkbox" id="download1">
+                                                              <label for="download1">
+                                                              </label>
+                                                            </div>
+                                                          </div>
+                                                        </td>
+                                                      <td>
+                                                        <a href="#"><i class="fas fa-file-download down-icon"></i></a>
+                                                        <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                      </td>
+                                                      </tr>
                                                     
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
                                           </div>
                                         </div>
-                                        <hr>
                                       </li>
                                       <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>Agenda Item Two Example</p>
+                                          <div class="form-group mt-2 d-flex align-items-center">
+                                            <input type="text" class="form-control" value="SC Agenda Item B">
+                                            <i class="fas fa-times ml-2 delete-input remove_field"></i> 
                                           </div>
-                                        
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agenda_Item_Two_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
+                                          <div class="row temp-right">
+                                            <div class="col-md-12">
+                                              <div class=" table-responsive table-responsive-md table-responsive-sm">
+                                                  <table class="table table-striped text-center ">
+                                                      <thead class="thead-blue">
+                                                        <tr><th>N0.</th>
+                                                        <th>Document</th>
+                                                        <th>View</th>
+                                                        <th>Download</th>
+                                                        <th>Action</th>
+                                                      </tr></thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>1</td>
+                                                          <td>SC_Agenda_Item_B_01.docx</td>
+                                                          <td> 
+                                                            <div class="form-group clearfix">
+                                                              <div class="form-group clearfix text-center">
+                                                                <div class="icheck-primary d-inline">
+                                                                  <input type="checkbox" id="view1">
+                                                                  <label for="view1">
+                                                                  </label>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            
+                                                          </td>
+                                                          <td>
+                                                            <div class="form-group clearfix text-center">
+                                                              <div class="icheck-primary d-inline">
+                                                                <input type="checkbox" id="download1">
+                                                                <label for="download1">
+                                                                </label>
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        <td>
+                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
+                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                        </td>
+                                                        </tr>
+                                                      
+                                                      </tbody>
+                                                    </table>
+                                              </div>
+                                            </div>
                                           </div>
-                                        </div>
-                                        <hr>
                                       </li>
+                                      <li>
+                                          <div class="form-group mt-2 d-flex align-items-center">
+                                            <input type="text" class="form-control" value="SC Agenda Item C">
+                                            <i class="fas fa-times ml-2 delete-input remove_field"></i> 
+                                          </div>
+                                          <div class="row temp-right">
+                                            <div class="col-md-12">
+                                              <div class=" table-responsive table-responsive-md table-responsive-sm">
+                                                  <table class="table table-striped text-center ">
+                                                      <thead class="thead-blue">
+                                                        <tr><th>N0.</th>
+                                                        <th>Document</th>
+                                                        <th>View</th>
+                                                        <th>Download</th>
+                                                        <th>Action</th>
+                                                      </tr></thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>1</td>
+                                                          <td>SC_Agenda_Item_C_01.docx</td>
+                                                          <td> 
+                                                            <div class="form-group clearfix">
+                                                              <div class="form-group clearfix text-center">
+                                                                <div class="icheck-primary d-inline">
+                                                                  <input type="checkbox" id="view1">
+                                                                  <label for="view1">
+                                                                  </label>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            
+                                                          </td>
+                                                          <td>
+                                                            <div class="form-group clearfix text-center">
+                                                              <div class="icheck-primary d-inline">
+                                                                <input type="checkbox" id="download1">
+                                                                <label for="download1">
+                                                                </label>
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        <td>
+                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
+                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                        </td>
+                                                        </tr>
+                                                      
+                                                      </tbody>
+                                                    </table>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="form-group mt-2 d-flex align-items-center">
+                                            <input type="text" class="form-control" value="SC Agenda Item D">
+                                            <i class="fas fa-times ml-2 delete-input remove_field"></i> 
+                                          </div>
+                                          <div class="row temp-right">
+                                            <div class="col-md-12">
+                                              <div class=" table-responsive table-responsive-md table-responsive-sm">
+                                                  <table class="table table-striped text-center ">
+                                                      <thead class="thead-blue">
+                                                        <tr><th>N0.</th>
+                                                        <th>Document</th>
+                                                        <th>View</th>
+                                                        <th>Download</th>
+                                                        <th>Action</th>
+                                                      </tr></thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>1</td>
+                                                          <td>SC_Agenda_Item_D_01.docx</td>
+                                                          <td> 
+                                                            <div class="form-group clearfix">
+                                                              <div class="form-group clearfix text-center">
+                                                                <div class="icheck-primary d-inline">
+                                                                  <input type="checkbox" id="view1">
+                                                                  <label for="view1">
+                                                                  </label>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            
+                                                          </td>
+                                                          <td>
+                                                            <div class="form-group clearfix text-center">
+                                                              <div class="icheck-primary d-inline">
+                                                                <input type="checkbox" id="download1">
+                                                                <label for="download1">
+                                                                </label>
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        <td>
+                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
+                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                        </td>
+                                                        </tr>
+                                                      
+                                                      </tbody>
+                                                    </table>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </li>
+                                 
                                  
                                     </ol>
                                   </div>
