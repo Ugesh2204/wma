@@ -574,19 +574,14 @@
                                   <div class="modal-body">
                                     <div class="row text-center">
                                       <div class="col-md-12">
-                                        <h4 class="meeting-heading">Staff Committee Meeting Agenda Template</h4>
+                                        <h4 class="meeting-heading">Staff Committee Agenda Template</h4>
                                       </div>
                                     </div>
                                     <div class="row wmatext-align mt-2">
                                       <div class="col-md-12">
-                                          <!-- <input type="file" multiple="multiple" id="uploadFile1" onclick="uploaddocs()"> -->
-                                          <input type="file" id="actual-btn" hidden/>
-                                              <!-- our custom upload button -->
-                                              <label for="actual-btn" class="btn btn-success mb-0 uploadsize">Upload files</label>
-                                              <!-- name of file chosen -->
-                                              <!-- <span id="file-chosen">No file chosen</span> -->
-
-                                        <a href="#" class="btn btn-primary add-field pushbtn" onclick="addtempfield()"><i class="fas fa-plus"></i> Add Item</a>
+                                        <input type="file"  multiple="multiple" id="uploadFile1" onclick="uploaddocs()">
+                                        <label for="uploadFile1" class="btn btn-success mb-0 uploadsize">Upload files</label> 
+                                        <a href="#" class="btn btn-primary add-field" onclick="addtempfield()" ><i class="fas fa-plus"></i> Add Item</a>
                                       </div>
                                     </div>
                                     <ol class="col-md-12 pl-3 pr-0">
@@ -601,11 +596,11 @@
                                             <div class=" table-responsive table-responsive-md table-responsive-sm">
                                                 <table class="table table-striped text-center ">
                                                     <thead class="thead-blue">
-                                                      <tr><th>N0.</th>
-                                                      <th>Document</th>
-                                                      <th>View</th>
-                                                      <th>Download</th>
-                                                      <th>Action</th>
+                                                      <tr><th class="th-size">N0.</th>
+                                                      <th class="th-size">Document</th>
+                                                      <th class="th-size">View</th>
+                                                      <th class="th-size">Download</th>
+                                                      <th class="th-size">Action</th>
                                                     </tr></thead>
                                                     <tbody>
                                                       <tr>
@@ -633,8 +628,8 @@
                                                           </div>
                                                         </td>
                                                       <td>
-                                                        <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                        <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                        <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                        <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                       </td>
                                                       </tr>
                                                     
@@ -654,11 +649,12 @@
                                               <div class=" table-responsive table-responsive-md table-responsive-sm">
                                                   <table class="table table-striped text-center ">
                                                       <thead class="thead-blue">
-                                                        <tr><th>N0.</th>
-                                                        <th>Document</th>
-                                                        <th>View</th>
-                                                        <th>Download</th>
-                                                        <th>Action</th>
+                                                        <tr>
+                                                          <th class="th-size">N0.</th>
+                                                        <th class="th-size">Document</th>
+                                                        <th class="th-size">View</th>
+                                                        <th class="th-size">Download</th>
+                                                        <th class="th-size">Action</th>
                                                       </tr></thead>
                                                       <tbody>
                                                         <tr>
@@ -668,8 +664,8 @@
                                                             <div class="form-group clearfix">
                                                               <div class="form-group clearfix text-center">
                                                                 <div class="icheck-primary d-inline">
-                                                                  <input type="checkbox" id="view1">
-                                                                  <label for="view1">
+                                                                  <input type="checkbox" id="view2">
+                                                                  <label for="view2">
                                                                   </label>
                                                                 </div>
                                                               </div>
@@ -679,15 +675,15 @@
                                                           <td>
                                                             <div class="form-group clearfix text-center">
                                                               <div class="icheck-primary d-inline">
-                                                                <input type="checkbox" id="download1">
-                                                                <label for="download1">
+                                                                <input type="checkbox" id="download2">
+                                                                <label for="download2">
                                                                 </label>
                                                               </div>
                                                             </div>
                                                           </td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                         </tr>
                                                       
@@ -707,11 +703,11 @@
                                               <div class=" table-responsive table-responsive-md table-responsive-sm">
                                                   <table class="table table-striped text-center ">
                                                       <thead class="thead-blue">
-                                                        <tr><th>N0.</th>
-                                                        <th>Document</th>
-                                                        <th>View</th>
-                                                        <th>Download</th>
-                                                        <th>Action</th>
+                                                        <tr><th class="th-size">N0.</th>
+                                                        <th class="th-size">Document</th>
+                                                        <th class="th-size">View</th>
+                                                        <th class="th-size">Download</th>
+                                                        <th class="th-size">Action</th>
                                                       </tr></thead>
                                                       <tbody>
                                                         <tr>
@@ -721,8 +717,8 @@
                                                             <div class="form-group clearfix">
                                                               <div class="form-group clearfix text-center">
                                                                 <div class="icheck-primary d-inline">
-                                                                  <input type="checkbox" id="view1">
-                                                                  <label for="view1">
+                                                                  <input type="checkbox" id="view3">
+                                                                  <label for="view3">
                                                                   </label>
                                                                 </div>
                                                               </div>
@@ -732,15 +728,15 @@
                                                           <td>
                                                             <div class="form-group clearfix text-center">
                                                               <div class="icheck-primary d-inline">
-                                                                <input type="checkbox" id="download1">
-                                                                <label for="download1">
+                                                                <input type="checkbox" id="download3">
+                                                                <label for="download3">
                                                                 </label>
                                                               </div>
                                                             </div>
                                                           </td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                         </tr>
                                                       
@@ -760,11 +756,11 @@
                                               <div class=" table-responsive table-responsive-md table-responsive-sm">
                                                   <table class="table table-striped text-center ">
                                                       <thead class="thead-blue">
-                                                        <tr><th>N0.</th>
-                                                        <th>Document</th>
-                                                        <th>View</th>
-                                                        <th>Download</th>
-                                                        <th>Action</th>
+                                                        <tr><th class="th-size">N0.</th>
+                                                        <th class="th-size">Document</th>
+                                                        <th class="th-size">View</th>
+                                                        <th class="th-size">Download</th>
+                                                        <th class="th-size">Action</th>
                                                       </tr></thead>
                                                       <tbody>
                                                         <tr>
@@ -774,8 +770,8 @@
                                                             <div class="form-group clearfix">
                                                               <div class="form-group clearfix text-center">
                                                                 <div class="icheck-primary d-inline">
-                                                                  <input type="checkbox" id="view1">
-                                                                  <label for="view1">
+                                                                  <input type="checkbox" id="view4">
+                                                                  <label for="view4">
                                                                   </label>
                                                                 </div>
                                                               </div>
@@ -785,15 +781,15 @@
                                                           <td>
                                                             <div class="form-group clearfix text-center">
                                                               <div class="icheck-primary d-inline">
-                                                                <input type="checkbox" id="download1">
-                                                                <label for="download1">
+                                                                <input type="checkbox" id="download4">
+                                                                <label for="download4">
                                                                 </label>
                                                               </div>
                                                             </div>
                                                           </td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                         </tr>
                                                       
@@ -829,379 +825,359 @@
                                         <h4 class="meeting-heading">Board Meeting Agenda Template</h4>
                                       </div>
                                     </div>
-
-                             
-
-                                    <ol class="col-md-12 pl-4 pr-4 template">
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col-md-10">
-                                            <p>Approval of minutes of proceeding of the <span class="smallth"><b>xxx th</b></span> <b>Board Meeting</b>  
-                                              held on <b>dd/mm/yy</b</p>
-                                          </div>
-                                         
+                                    <div class="row text-right">
+                                        <div class="col-md-12">
+                                            <input type="file" multiple="multiple" id="uploadFile1" onclick="uploaddocs()">
+                                            <label for="uploadFile1" class="btn btn-success mb-0 uploadsize">Upload files</label> 
+                                          <!-- onclick="addtempfield()" -->
+                                          <a href="#" class="btn btn-primary add-field" onclick="addtempfield()" ><i class="fas fa-plus"></i> Add Item</a>
                                         </div>
-                                      </li>
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col-md-12">
-                                            <p>Matters arising out of minutes of the <span class="smallth"><b>xxx th</b></span> <b>Board Meeting</b>  held on <b>dd/mm/yy</b></p>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col-md-12">
-                                            <p><span class="smallth"><b>xxx th</b></span> <b>Finance and Project Monitoring Commmittee</b> meeting held on Board's decision on the following items:</p>
-                                          </div>
-                                        </div>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>1. <b>FPMC</b> - Item 1 Example</p>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agend_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
+                                    </div>
+                                    <div id="accordion"><!--Start Accordion-->
+                                      <ol class="agenda-wrapper">
+                                          <li>
+                                              <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
+                                                <div class="col-md-10">
+                                                  <p class="bd-size">Approval of minutes of proceeding of the <span class="smallth"><b>xxx th</b></span> <b>Board Meeting</b>  
+                                                    held on <b>
+                                                      <select style="width:70px">
+                                                        <option>99th</option> 
+                                                        <option>98th</option> 
+                                                        <option>97th</option> 
+                                                      </select>
+                                                </b> (Previous Board Meeting)</p>
+                                                </div>
+                                            </div>
+                                          </li>
+                    
+                                            <li>
+                                              <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
+                                                <div class="col-md-12">
+                                                  <p class="bd-size">Matters arising out of minutes of the <span class="smallth"><b>  <select style="width:70px">
+                                                    <option>99th</option> 
+                                                    <option>98th</option> 
+                                                    <option>97th</option> 
+                                                  </select></b></span> <b>Board Meeting</b>  held on <b>dd/mm/yy</b></p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <hr>
+                                              <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
+                                                <div class="col-md-12 board">
+                                                  <a  data-toggle="collapse"  href="#menuone" aria-expanded="true" aria-controls="menuone">
+                                                    <h5 class="bd-size">
+                                                      <span class="smallth">
+                                                      <b>  
+                                                        <select style="width:70px">
+                                                        <option>99th</option> 
+                                                        <option>98th</option> 
+                                                        <option>97th</option> 
+                                                      </select>
+                                                    </b>
+                                                    </span> 
+                                                    <b>Finance and Project Monitoring Commmittee</b>
+                                                      held on <b>dd/mm/yy</b> Board's decision on the following items: <i class="fas fa-chevron-circle-down care-down"></i>
+                                                    </h5>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                                <div id="menuone" class="collapse show"><!--Box-wrapper-->
+                                                  <div class="row">
+                                                    <div class="col-md-12 d-flex justify-content-end">
+                                                      <button type="button" class="btn btn-info"> View Minutes <i class="fas fa-file-pdf down-icon"></i></button>
+                                                    </div>
+                                                  </div>
+                    
+                                                  <div class="row  mt-1 mb-1 committee-wrapper">
+                                                    <div class="col">
+                                                      <h6 class="pt-2">1.FPMC Agenda Item A</h6>
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                          <table class="table table-striped text-center table-responsive-sm">
+                                                            <thead class="thead-blue">
+                                                              <tr><th>N0.</th>
+                                                              <th>Document Name</th>
+                                                              <th>Action</th>
+                                                            </tr></thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>1</td>
+                                                                <td>FPMC_Agenda_Item_A_01.docx</td>
+                                                                <td>
+                                                                    <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                    <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
                                                         </div>
                                                       </div>
                                                     </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>                                              
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <hr>
-                                      </li>
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col-md-10">
-                                            <p><span class="smallth"><b>xxx th</b></span> <b>Staff Committee meeting </b> held on <b>dd/mm/yy</b>  Borad's decision on the  following items:</p>
-                                          </div>
-                                        </div>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>1. <b>SC</b> - Item 1 Example</p>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agend_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
+                                                  </div>
+                    
+                                                  <div class="row  mt-1 mb-1 committee-wrapper">
+                                                    <div class="col">
+                                                      <h6 class="pt-2">2.FPMC Agenda Item B</h6>
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                          <table class="table table-striped text-center table-responsive-sm">
+                                                            <thead class="thead-blue">
+                                                              <tr><th>N0.</th>
+                                                              <th>Document Name</th>
+                                                              <th>Action</th>
+                                                            </tr></thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>1</td>
+                                                                <td>FPMC_Agenda_Item_B_01.docx</td>
+                                                                <td>
+                                                                    <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                    <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
                                                         </div>
                                                       </div>
                                                     </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
+                                                  </div>
+                                                </div><!-- End Box-wrapper-->
+                                              <hr>
+                                            </li>
+                    
+                                            <li>
+                                              <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
+                                                <div class="col-md-12 board">
+                                                  <a  data-toggle="collapse"  href="#menutwo" aria-expanded="true" aria-controls="menutwo"> 
+                                                    <h5 class="bd-size"><span class="smallth"><b>  <select style="width:70px">
+                                                    <option>99th</option> 
+                                                    <option>98th</option> 
+                                                    <option>97th</option> 
+                                                  </select></b></span> <b>Staff Committee meeting </b> held on <b>dd/mm/yy</b>  Borad's decision on the  following items: <i class="fas fa-chevron-circle-down care-down"></i></h5></a>
+                                                </div>
+                                              </div>
+                                              <div id="menutwo" class="collapse show">
+                    
+                                                <div class="row">
+                                                  <div class="col-md-12 d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-info"> View Minutes <i class="fas fa-file-pdf down-icon"></i></button>
+                                                  </div>
+                                                </div>
+                                                <div class="row  mt-1 mb-1 committee-wrapper">
+                                                  <div class="col">
+                                                    <h6 class="pt-2">1. SC Agenda Item A</h6>
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <table class="table table-striped text-center table-responsive-sm">
+                                                          <thead class="thead-blue">
+                                                            <tr><th>N0.</th>
+                                                            <th>Document Name</th>
+                                                            <th>Action</th>
+                                                          </tr></thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>SC_Agenda_Item_A_01.docx</td>
+                                                              <td>
+                                                                  <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                  <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
                                                       </div>
                                                     </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
+                                                  </div>
+                                                </div>
+                                                <div class="row  mt-1 mb-1 committee-wrapper">
+                                                  <div class="col">
+                                                    <h6 class="pt-2">2.SC Agenda Item A</h6>
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <table class="table table-striped text-center table-responsive-sm">
+                                                          <thead class="thead-blue">
+                                                            <tr><th>N0.</th>
+                                                            <th>Document Name</th>
+                                                            <th>Action</th>
+                                                          </tr></thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>SC_Agenda_Item_B_01.docx</td>
+                                                              <td>
+                                                                  <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                  <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div><!-- End Box-wrapper-->
+                                              <hr>
+                                            </li>
+                    
+                                            <li>
                                               
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <hr>
-                                      </li>
+                                              <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
+                                                <div class="col-md-12 board">
+                                                  <a  data-toggle="collapse"  href="#menuthree" aria-expanded="true" aria-controls="menuthree">
+                                                    <h5 class="bd-size"><span class="smallth"><b>  <select style="width:70px">
+                                                    <option>99th</option> 
+                                                    <option>98th</option> 
+                                                    <option>97th</option> 
+                                                  </select></b></span> <b>Corporate Governance Committee meeting </b>held on <b>dd/mm/yy</b>  
+                                                  Borad's decision on the  following items: <i class="fas fa-chevron-circle-down care-down"></i></h5></a>
+                                                </div>
+                                              </div>
+                    
+                                              <div id="menuthree" class="collapse show">
+                    
+                                                <div class="row">
+                                                  <div class="col-md-12 d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-info"> View Minutes <i class="fas fa-file-pdf down-icon"></i></button>
+                                                  </div>
+                                                </div>
+                                                <div class="row  mt-1 mb-1 committee-wrapper">
+                                                  <div class="col">
+                                                    <h6 class="pt-2">1.CGC Agenda Item A</h6>
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <table class="table table-striped text-center table-responsive-sm">
+                                                          <thead class="thead-blue">
+                                                            <tr><th>N0.</th>
+                                                            <th>Document Name</th>
+                                                            <th>Action</th>
+                                                          </tr></thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>CGC_Agenda_Item_A_01.docx</td>
+                                                              <td>
+                                                                  <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                  <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                      
+                                                <div class="row  mt-1 mb-1 committee-wrapper">
+                                                  <div class="col">
+                                                    <h6>2. CGC Agenda Item B</h6>
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <table class="table table-striped text-center table-responsive-sm">
+                                                          <thead class="thead-blue">
+                                                            <tr><th>N0.</th>
+                                                            <th>Document Name</th>
+                                                            <th>Action</th>
+                                                          </tr></thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>CGC_Agenda_Item_B_01.docx</td>
+                                                              <td>
+                                                                  <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                  <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div><!-- End Box-wrapper-->
+                    
+                                              <hr>
+                                            </li>
+                    
+                                            <li>
+                                              <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
+                                                <div class="col-md-12 board">
+                                                  <a  data-toggle="collapse"  href="#menufour" aria-expanded="true" aria-controls="menufour"> 
+                                                    <h5 class="bd-size"><span class="smallth"><b>  <select style="width:70px">
+                                                    <option>99th</option> 
+                                                    <option>98th</option> 
+                                                    <option>97th</option> 
+                                                  </select>
+                                                </b></span> <b>Audit and Risk  Committee meeting </b>held on <b>dd/mm/yy</b>  Borad's decision on the  following items: 
+                                                <i class="fas fa-chevron-circle-down care-down"></i></h5></a>
+                                                </div>
+                                              </div>
+                    
+                                              <div id="menufour" class="collapse show">
+                                                <div class="row">
+                                                  <div class="col-md-12 d-flex justify-content-end">
+                                                    <button type="button" class="btn btn-info"> View Minutes <i class="fas fa-file-pdf down-icon"></i></button>
+                                                  </div>
+                                                </div>
+                                                <div class="row  mt-1 mb-1 committee-wrapper">
+                                                  <div class="col">
+                                                    <h6 class="pt-2">1.ARC Agenda Item A</h6>
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <table class="table table-striped text-center table-responsive-sm">
+                                                          <thead class="thead-blue">
+                                                            <tr><th>N0.</th>
+                                                            <th>Document Name</th>
+                                                            <th>Action</th>
+                                                          </tr></thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>ARC_Agenda_Item_A_01.docx</td>
+                                                              <td>
+                                                                  <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                  <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                      
+                                                <div class="row  mt-1 mb-1 committee-wrapper">
+                                                  <div class="col">
+                                                    <h6 class="pt-2">2. ARC Agenda Item B</h6>
+                                                    <div class="row">
+                                                      <div class="col-md-12">
+                                                        <table class="table table-striped text-center table-responsive-sm">
+                                                          <thead class="thead-blue">
+                                                            <tr><th>N0.</th>
+                                                            <th>Document Name</th>
+                                                            <th>Action</th>
+                                                          </tr></thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td>1</td>
+                                                              <td>ARC_Agenda_Item_B_01.docx</td>
+                                                              <td>
+                                                                  <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                                  <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div><!-- End Box-wrapper-->
+                                              <hr>
+                                            </li>
+                                      </ol>
+                                    </div>
 
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col-md-10">
-                                            <p><span class="smallth"><b>xxx th</b></span> <b>Corporate Governance Committee meeting </b>held on <b>dd/mm/yy</b>  Borad's decision on the  following items:</p>
-                                          </div>
-                                        </div>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>1. <b>CGC</b> - Item 1 Example</p>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agend_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <hr>
-                                      </li>
-
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col-md-10">
-                                            <p><span class="smallth"><b>xxx th</b></span> <b>Audit and Risk  Committee meeting </b>held on <b>dd/mm/yy</b>  Borad's decision on the  following items:</p>
-                                          </div>
-                                        </div>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>1. <b>ARC</b> - Item 1 Example</p>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agend_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <hr>
-                                      </li>
-
-                                      
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>1.BOA Item 1 Example</p>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agend_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <hr>
-                                      </li>
-
-                                      <li>
-                                        <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
-                                          <div class="col">
-                                            <p>1.BOA Item 2 Example</p>
-                                          </div>
-                                        </div>
-                                        <div class="row">
-                                          <div class="col-md-12">
-                                            <table class="table table-striped text-center table-responsive-sm">
-                                              <thead class="thead-blue">
-                                                <tr><th>N0.</th>
-                                                <th>Document</th>
-                                                <th>View</th>
-                                                <th>Download</th>
-                                                <th>Action</th>
-                                              </tr></thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                  <td>Agend_Item_One_01.docx</td>
-                                                  <td> 
-                                                    <div class="form-group clearfix">
-                                                      <div class="form-group clearfix text-center">
-                                                        <div class="icheck-primary d-inline">
-                                                          <input type="checkbox" id="view1">
-                                                          <label for="view1">
-                                                          </label>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-group clearfix text-center">
-                                                      <div class="icheck-primary d-inline">
-                                                        <input type="checkbox" id="download1">
-                                                        <label for="download1">
-                                                        </label>
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                <td>
-                                                  <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                  <a href="#"> <i class="fas fa-eye down-icon"></i></a>
-                                                </td>
-                                                </tr>
-                                              
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <hr>
-                                      </li>
-
-
-                                     
-
-                                      
-                                 
-                                      
-                                     
-                                    
-                                    </ol>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

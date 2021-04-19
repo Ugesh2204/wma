@@ -14,6 +14,28 @@
   --wmacolor:#0997D1;
 }
 
+.bd-size {
+  font-size: 1rem;
+} 
+.care-down {
+  color: green;
+  font-size: 1.5rem;
+  
+}
+.search-btn {
+  padding: 0.25rem 0.75rem !important;
+}
+
+.th-size {
+  font-size: 1rem;
+}
+.action-btn {
+  padding: 0rem 0.3rem !important;
+}
+
+.icon-sm {
+  font-size: 13px !important;
+}
 
 .form-control {
   height: calc(2rem + 2px) !important;
@@ -114,6 +136,10 @@
 
 
 /*New css added*/
+input[type=file] {
+  text-indent: -102px !important;
+  width: 18%;
+}
 .temp-right {
   padding-right: 1.2rem;
   padding-left: 0.1rem;

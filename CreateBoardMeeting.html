@@ -441,19 +441,13 @@
                         <div class="card-body">
                           <div class="row">
                             <div class="col-md-12">
-
+                              <input type="file" multiple="multiple" id="uploadFile1" onclick="uploaddocs()">
+                              <label for="uploadFile1" class="btn btn-success mb-0 uploadsize">Upload files</label> 
                               <input type="file" id="uploadFile" name="FileUpload" multiple="multiple" />
                               <div id="upload_prev"></div>
                               <input type="checkbox" id="clearOnDelete" class="hide" value=1 checked/>
                         
                             </div>
-
-
-
-                            <!-- <form>
-                              <input type="file">
-                              <p><strong>Note:</strong> Choose any file on your computer and its name will be displayed in an alert dialog box.</p>
-                          </form> -->
 
                           </div>
                         </div>
@@ -474,17 +468,18 @@
                             <div class="card-body">
                               <div class="row text-right">
                                 <div class="col-md-12">
+                                    <input type="file" multiple="multiple" id="uploadFile1" onclick="uploaddocs()">
+                                    <label for="uploadFile1" class="btn btn-success mb-0 uploadsize">Upload files</label> 
                                   <!-- onclick="addtempfield()" -->
                                   <a href="#" class="btn btn-primary add-field" onclick="addtempfield()" ><i class="fas fa-plus"></i> Add Item</a>
                                 </div>
                               </div>
-
                               <div id="accordion"><!--Start Accordion-->
                                 <ol class="agenda-wrapper">
                                     <li>
                                         <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
                                           <div class="col-md-10">
-                                            <p>Approval of minutes of proceeding of the <span class="smallth"><b>xxx th</b></span> <b>Board Meeting</b>  
+                                            <p class="bd-size">Approval of minutes of proceeding of the <span class="smallth"><b>xxx th</b></span> <b>Board Meeting</b>  
                                               held on <b>
                                                 <select style="width:70px">
                                                   <option>99th</option> 
@@ -499,7 +494,7 @@
                                       <li>
                                         <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
                                           <div class="col-md-12">
-                                            <p>Matters arising out of minutes of the <span class="smallth"><b>  <select style="width:70px">
+                                            <p class="bd-size">Matters arising out of minutes of the <span class="smallth"><b>  <select style="width:70px">
                                               <option>99th</option> 
                                               <option>98th</option> 
                                               <option>97th</option> 
@@ -511,13 +506,21 @@
                                         <hr>
                                         <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
                                           <div class="col-md-12 board">
-                                            <a  data-toggle="collapse"  href="#menuone" aria-expanded="true" aria-controls="menuone"><h5><span class="smallth"><b>  
-                                              <select style="width:70px">
-                                              <option>99th</option> 
-                                              <option>98th</option> 
-                                              <option>97th</option> 
-                                            </select>
-                                          </b></span> <b>Finance and Project Monitoring Commmittee</b> held on <b>dd/mm/yy</b> Board's decision on the following items: <i class="fas fa-angle-down arrow-down"></i></h5></a>
+                                            <a  data-toggle="collapse"  href="#menuone" aria-expanded="true" aria-controls="menuone">
+                                              <h5 class="bd-size">
+                                                <span class="smallth">
+                                                <b>  
+                                                  <select style="width:70px">
+                                                  <option>99th</option> 
+                                                  <option>98th</option> 
+                                                  <option>97th</option> 
+                                                </select>
+                                              </b>
+                                              </span> 
+                                              <b>Finance and Project Monitoring Commmittee</b>
+                                               held on <b>dd/mm/yy</b> Board's decision on the following items: <i class="fas fa-chevron-circle-down care-down"></i>
+                                              </h5>
+                                            </a>
                                           </div>
                                         </div>
                                           <div id="menuone" class="collapse show"><!--Box-wrapper-->
@@ -529,7 +532,7 @@
               
                                             <div class="row  mt-1 mb-1 committee-wrapper">
                                               <div class="col">
-                                                <h6 class="pt-2">1. <b>FPMC</b> - Item 1 Example</h6>
+                                                <h6 class="pt-2">1.FPMC Agenda Item A</h6>
                                                 <div class="row">
                                                   <div class="col-md-12">
                                                     <table class="table table-striped text-center table-responsive-sm">
@@ -541,10 +544,10 @@
                                                       <tbody>
                                                         <tr>
                                                           <td>1</td>
-                                                          <td>Agend_Item_One_01.docx</td>
+                                                          <td>FPMC_Agenda_Item_A_01.docx</td>
                                                           <td>
-                                                            <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                            <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                              <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                              <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                           </td>
                                                         </tr>
                                                       </tbody>
@@ -556,7 +559,7 @@
               
                                             <div class="row  mt-1 mb-1 committee-wrapper">
                                               <div class="col">
-                                                <h6 class="pt-2">2. <b>FPMC</b> - Item 2 Example</h6>
+                                                <h6 class="pt-2">2.FPMC Agenda Item B</h6>
                                                 <div class="row">
                                                   <div class="col-md-12">
                                                     <table class="table table-striped text-center table-responsive-sm">
@@ -568,10 +571,10 @@
                                                       <tbody>
                                                         <tr>
                                                           <td>1</td>
-                                                          <td>Agend_Item_Two_01.docx</td>
+                                                          <td>FPMC_Agenda_Item_B_01.docx</td>
                                                           <td>
-                                                            <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                            <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                              <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                              <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                           </td>
                                                         </tr>
                                                       </tbody>
@@ -587,11 +590,12 @@
                                       <li>
                                         <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
                                           <div class="col-md-12 board">
-                                            <a  data-toggle="collapse"  href="#menutwo" aria-expanded="true" aria-controls="menutwo"> <h5><span class="smallth"><b>  <select style="width:70px">
+                                            <a  data-toggle="collapse"  href="#menutwo" aria-expanded="true" aria-controls="menutwo"> 
+                                              <h5 class="bd-size"><span class="smallth"><b>  <select style="width:70px">
                                               <option>99th</option> 
                                               <option>98th</option> 
                                               <option>97th</option> 
-                                            </select></b></span> <b>Staff Committee meeting </b> held on <b>dd/mm/yy</b>  Borad's decision on the  following items: <i class="fas fa-angle-down arrow-down"></i></h5></a>
+                                            </select></b></span> <b>Staff Committee meeting </b> held on <b>dd/mm/yy</b>  Borad's decision on the  following items: <i class="fas fa-chevron-circle-down care-down"></i></h5></a>
                                           </div>
                                         </div>
                                         <div id="menutwo" class="collapse show">
@@ -603,7 +607,7 @@
                                           </div>
                                           <div class="row  mt-1 mb-1 committee-wrapper">
                                             <div class="col">
-                                              <h6 class="pt-2">1. <b>SC</b> - Item 1 Example</h6>
+                                              <h6 class="pt-2">1. SC Agenda Item A</h6>
                                               <div class="row">
                                                 <div class="col-md-12">
                                                   <table class="table table-striped text-center table-responsive-sm">
@@ -615,10 +619,10 @@
                                                     <tbody>
                                                       <tr>
                                                         <td>1</td>
-                                                        <td>Agend_Item_One_01.docx</td>
+                                                        <td>SC_Agenda_Item_A_01.docx</td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -629,7 +633,7 @@
                                           </div>
                                           <div class="row  mt-1 mb-1 committee-wrapper">
                                             <div class="col">
-                                              <h6 class="pt-2">2. <b>SC</b> - Item 2 Example</h6>
+                                              <h6 class="pt-2">2.SC Agenda Item A</h6>
                                               <div class="row">
                                                 <div class="col-md-12">
                                                   <table class="table table-striped text-center table-responsive-sm">
@@ -641,10 +645,10 @@
                                                     <tbody>
                                                       <tr>
                                                         <td>1</td>
-                                                        <td>Agend_Item_Two_01.docx</td>
+                                                        <td>SC_Agenda_Item_B_01.docx</td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -661,11 +665,13 @@
                                         
                                         <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
                                           <div class="col-md-12 board">
-                                            <a  data-toggle="collapse"  href="#menuthree" aria-expanded="true" aria-controls="menuthree"><h5><span class="smallth"><b>  <select style="width:70px">
+                                            <a  data-toggle="collapse"  href="#menuthree" aria-expanded="true" aria-controls="menuthree">
+                                              <h5 class="bd-size"><span class="smallth"><b>  <select style="width:70px">
                                               <option>99th</option> 
                                               <option>98th</option> 
                                               <option>97th</option> 
-                                            </select></b></span> <b>Corporate Governance Committee meeting </b>held on <b>dd/mm/yy</b>  Borad's decision on the  following items: <i class="fas fa-angle-down arrow-down"></i></h5></a>
+                                            </select></b></span> <b>Corporate Governance Committee meeting </b>held on <b>dd/mm/yy</b>  
+                                            Borad's decision on the  following items: <i class="fas fa-chevron-circle-down care-down"></i></h5></a>
                                           </div>
                                         </div>
               
@@ -678,7 +684,7 @@
                                           </div>
                                           <div class="row  mt-1 mb-1 committee-wrapper">
                                             <div class="col">
-                                              <h6 class="pt-2">1. <b>CGC</b> - Item 1 Example</h6>
+                                              <h6 class="pt-2">1.CGC Agenda Item A</h6>
                                               <div class="row">
                                                 <div class="col-md-12">
                                                   <table class="table table-striped text-center table-responsive-sm">
@@ -690,10 +696,10 @@
                                                     <tbody>
                                                       <tr>
                                                         <td>1</td>
-                                                        <td>Agend_Item_One_01.docx</td>
+                                                        <td>CGC_Agenda_Item_A_01.docx</td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -705,7 +711,7 @@
                 
                                           <div class="row  mt-1 mb-1 committee-wrapper">
                                             <div class="col">
-                                              <h6>2. <b>CGC</b> - Item 2 Example</h6>
+                                              <h6>2. CGC Agenda Item B</h6>
                                               <div class="row">
                                                 <div class="col-md-12">
                                                   <table class="table table-striped text-center table-responsive-sm">
@@ -717,10 +723,10 @@
                                                     <tbody>
                                                       <tr>
                                                         <td>1</td>
-                                                        <td>Agend_Item_Two_01.docx</td>
+                                                        <td>CGC_Agenda_Item_B_01.docx</td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -737,12 +743,14 @@
                                       <li>
                                         <div class="row  p-2 mt-1 mb-1 d-flex align-items-center">
                                           <div class="col-md-12 board">
-                                            <a  data-toggle="collapse"  href="#menufour" aria-expanded="true" aria-controls="menufour"> <h5><span class="smallth"><b>  <select style="width:70px">
+                                            <a  data-toggle="collapse"  href="#menufour" aria-expanded="true" aria-controls="menufour"> 
+                                              <h5 class="bd-size"><span class="smallth"><b>  <select style="width:70px">
                                               <option>99th</option> 
                                               <option>98th</option> 
                                               <option>97th</option> 
                                             </select>
-                                          </b></span> <b>Audit and Risk  Committee meeting </b>held on <b>dd/mm/yy</b>  Borad's decision on the  following items: <i class="fas fa-angle-down arrow-down"></i></h5></a>
+                                          </b></span> <b>Audit and Risk  Committee meeting </b>held on <b>dd/mm/yy</b>  Borad's decision on the  following items: 
+                                          <i class="fas fa-chevron-circle-down care-down"></i></h5></a>
                                           </div>
                                         </div>
               
@@ -754,7 +762,7 @@
                                           </div>
                                           <div class="row  mt-1 mb-1 committee-wrapper">
                                             <div class="col">
-                                              <h6 class="pt-2">1. <b>CGC</b> - Item 1 Example</h6>
+                                              <h6 class="pt-2">1.ARC Agenda Item A</h6>
                                               <div class="row">
                                                 <div class="col-md-12">
                                                   <table class="table table-striped text-center table-responsive-sm">
@@ -766,10 +774,10 @@
                                                     <tbody>
                                                       <tr>
                                                         <td>1</td>
-                                                        <td>Agend_Item_One_01.docx</td>
+                                                        <td>ARC_Agenda_Item_A_01.docx</td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -781,7 +789,7 @@
                 
                                           <div class="row  mt-1 mb-1 committee-wrapper">
                                             <div class="col">
-                                              <h6 class="pt-2">2. <b>CGC</b> - Item 2 Example</h6>
+                                              <h6 class="pt-2">2. ARC Agenda Item B</h6>
                                               <div class="row">
                                                 <div class="col-md-12">
                                                   <table class="table table-striped text-center table-responsive-sm">
@@ -793,10 +801,10 @@
                                                     <tbody>
                                                       <tr>
                                                         <td>1</td>
-                                                        <td>Agend_Item_Two_01.docx</td>
+                                                        <td>ARC_Agenda_Item_B_01.docx</td>
                                                         <td>
-                                                          <a href="#"><i class="fas fa-file-download down-icon"></i></a>
-                                                          <a href="#"> <i class="fas fa-eye down-icon"></i></a>
+                                                            <a href="#" class="btn btn-primary action-btn"><i class="fas fa-file-download down-icon icon-sm"></i></a>
+                                                            <a href="#" class="btn btn-success action-btn"> <i class="fas fa-eye down-icon icon-sm"></i></a>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -809,12 +817,8 @@
                                         <hr>
                                       </li>
                                 </ol>
-                                </div>
-                              
-                            
+                              </div>
                             </div>
-
-                              
                             </div>
                           </div>
                         </div>
